@@ -7,7 +7,15 @@
 @tailwind utilities;
 
 html {
-    @apply font-body
+    @apply font-body text-violet-100 bg-zinc-900
+}
+
+body {
+    @apply bg-zinc-900
+}
+
+::selection {
+    @apply bg-violet-500
 }
 
 .highlight {
@@ -19,4 +27,9 @@ html {
 }
 .animated-highlight {
     @apply highlight after:right-[calc(100%+0.6rem)] after:transition-all hover:after:right-[-0.6rem] after:ease-out after:duration-150;
+}
+
+
+.card-shadow {
+    filter: drop-shadow(4px 4px theme("colors.violet.500"));
 }

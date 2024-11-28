@@ -7,10 +7,10 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                title: ["Hammersmith One", "sans-serif"],
-                // body: ["Parkinsans", "sans-serif"],
-                // body: ["Press Start 2P", "sans-serif"],
-                body: ["DotGothic16", "sans-serif"],
+                pixel: ["DotGothic16", "sans-serif"],
+                // title: ["Hammersmith One", "sans-serif"],
+                // title: ["Press Start 2P", "sans-serif"],
+                body: ["Parkinsans", "sans-serif"],
             },
             borderWidth: {
                 3: "3px"

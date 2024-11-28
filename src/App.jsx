@@ -1,10 +1,11 @@
-import { Background, Header } from "./exports"
+import { Background, Header, Landing } from "./exports"
 
 const App = () => {
     return (
         <>
-            <Background />
+            {/* <Background /> */}
             <Header />
+            <Landing />
         </>
     )
 }
