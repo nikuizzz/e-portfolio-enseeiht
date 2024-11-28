@@ -1,6 +1,11 @@
+import { Background, Header } from "./exports"
+
 const App = () => {
     return (
-        <p className="text-red-500">hellod</p>
+        <>
+            <Background />
+            <Header />
+        </>
     )
 }
 

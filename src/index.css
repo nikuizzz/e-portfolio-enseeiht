@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+    @apply font-body
+}
+
+.highlight {
+    @apply relative;
+}
+.highlight::after {
+    content: "";
+    @apply z-[-1] absolute inset-y-[-0.25rem] inset-x-[-0.6rem]
+}
+.animated-highlight {
+    @apply highlight after:right-[calc(100%+0.6rem)] after:transition-all hover:after:right-[-0.6rem] after:ease-out after:duration-150;
+}
