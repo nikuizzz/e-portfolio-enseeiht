@@ -3,7 +3,7 @@ import { Strings, ContentWrapper, Button } from '../exports'
 import clsx from 'clsx'
 import { easeOut, motion } from 'framer-motion'
 
-const SectionMotionContainer = ({children}) => {
+const SectionMotionContainer = ({children, className=""}) => {
     return (
         <motion.div
             initial={{
@@ -19,7 +19,7 @@ const SectionMotionContainer = ({children}) => {
                 duration: 1,
                 ease: easeOut
             }}
-            className="mt-20 flex flex-col w-full gap-6"
+            className={className}
         >
             {children}
         </motion.div>
@@ -28,26 +28,28 @@ const SectionMotionContainer = ({children}) => {
 
 const ProjectSection = ({children, img, title}) => {
     return (
-        <div className="flex gap-10">
+        <SectionMotionContainer className="flex gap-10">
+            {/* <> */}
             <img
-                src="/photo_cv.png"
-                alt="title"
+                src={img}
+                alt={title}
                 className="size-52 border-3 border-violet-400 card-shadow"
-            />
+                />
 
             <div className="flex flex-col gap-8">
                 <p className="text-2xl">{title}</p>
 
                 {children}
             </div>
-        </div>
+            {/* </> */}
+        </SectionMotionContainer>
     )
 }
 
 const SectionIUT = () => {
-    const [activeProjet, setActiveProject] = useState(1)
+    const [activeProjet, setActiveProject] = useState(0)
     return (
-        <SectionMotionContainer>
+        <SectionMotionContainer className="mt-20 flex flex-col w-full gap-6">
             <p className="font-pixel text-3xl font-bold text-violet-500 mb-4">IUT of Saint-Malo</p>
 
             <p className="text-justify">
@@ -63,47 +65,27 @@ const SectionIUT = () => {
             </p>
 
             <div className="flex gap-4">
-                <Button 
-                    text={"WEI website"}
-                    fun={() => setActiveProject(1)}
-                    active={activeProjet === 1}
-                    className={clsx(
-                        {
-                            "opacity-25": activeProjet !== 1
-                        }
-                    )}
-                />
-                <Button 
-                    text={"RDD website"}
-                    fun={() => setActiveProject(2)}
-                    active={activeProjet === 2}
-                    className={clsx(
-                        {
-                            "opacity-25": activeProjet !== 2
-                        }
-                    )}
-                />
-                <Button 
-                    text={"Network automation tool"}
-                    fun={() => setActiveProject(3)}
-                    active={activeProjet === 3}
-                    className={clsx(
-                        {
-                            "opacity-25": activeProjet !== 3
-                        }
-                    )}
-                />
+                {Strings.engineering_course.iut.project.map( (project, index) => (
+                    <Button 
+                        text={project.title}
+                        fun={() => setActiveProject(index)}
+                        active={activeProjet === index}
+                        className={clsx(
+                            {
+                                "opacity-25": activeProjet !== index
+                            }
+                        )}
+                    />
+                ))}
             </div>
 
-            {activeProjet === 1 && (
-                <ProjectSection
-                    title={"WEI website"}
-                    img={"/photo_cv.png"}
-                >
-                    <p>{Strings.engineering_course.iut.projects[0]}</p>
-
-                </ProjectSection>
-            )}
+            <ProjectSection
+                key={activeProjet}
+                title={Strings.engineering_course.iut.project[activeProjet].title}
+                img={Strings.engineering_course.iut.project[activeProjet].img}
+            >
+                <p>{Strings.engineering_course.iut.project[activeProjet].description}</p>
+            </ProjectSection>
         </SectionMotionContainer>
     )
 }
