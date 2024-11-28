@@ -1,3 +1,27 @@
 {
-    "elevator_speech": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam aperiam recusandae, quis accusamus a, commodi quod, quae dolor incidunt praesentium neque quas autem corrupti fuga nobis ratione eligendi odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam aperiam recusandae, quis accusamus a, commodi quod, quae dolor incidunt praesentium neque quas autem corrupti fuga nobis ratione eligendi odio."
+    "elevator_speech": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam aperiam recusandae, quis accusamus a, commodi quod, quae dolor incidunt praesentium neque quas autem corrupti fuga nobis ratione eligendi odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam aperiam recusandae, quis accusamus a, commodi quod, quae dolor incidunt praesentium neque quas autem corrupti fuga nobis ratione eligendi odio.",
+    "engineering_course": {
+        "iut": {
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam aperiam recusandae, quis accusamus a, commodi quod, quae dolor incidunt praesentium neque quas autem corrupti fuga nobis ratione eligendi odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam aperiam recusandae, quis accusamus a, commodi quod, quae dolor incidunt praesentium neque quas autem corrupti fuga nobis ratione eligendi odio.",
+            "project": [
+                {
+                    "title": "WEI Website",
+                    "img": "/photo_cv.png",
+                    "description": "lorem ipsum"
+                },
+                {
+                    "title": "RDD Website",
+                    "img": "/photo_cv.png",
+                    "description": "lorem ipsum"
+                },
+                {
+                    "title": "Network automation tool",
+                    "img": "/photo_cv.png",
+                    "description": "lorem ipsum"
+                }
+            ]
+        },
+        "enseeiht": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam aperiam recusandae, quis accusamus a, commodi quod, quae dolor incidunt praesentium neque quas autem corrupti fuga nobis ratione eligendi odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam aperiam recusandae, quis accusamus a, commodi quod, quae dolor incidunt praesentium neque quas autem corrupti fuga nobis ratione eligendi odio.",
+        "coming_soon": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam aperiam recusandae, quis accusamus a, commodi quod, quae dolor incidunt praesentium neque quas autem corrupti fuga nobis ratione eligendi odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam aperiam recusandae, quis accusamus a, commodi quod, quae dolor incidunt praesentium neque quas autem corrupti fuga nobis ratione eligendi odio."
+    }
 }

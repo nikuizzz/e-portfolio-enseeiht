@@ -1,13 +1,12 @@
-import { Demo } from "@/exports";
-import { Background, Header, Landing } from "@/exports";
+import { Background, Header, Landing, Engineering } from "@/exports";
 
 const App = () => {
     return (
         <>
-            {/* <Background /> */}
+            <Background />
             <Header />
             <Landing />
-            <Demo />
+            <Engineering />
         </>
     );
 };

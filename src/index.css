@@ -14,6 +14,10 @@ body {
     @apply bg-zinc-900
 }
 
+p, span {
+    z-index: 5;
+}
+
 ::selection {
     @apply bg-violet-500
 }

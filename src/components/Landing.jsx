@@ -1,11 +1,10 @@
 import clsx from "clsx";
 import { ContentWrapper, Strings, Button } from "../exports";
 import { motion, steps } from "framer-motion";
-import { Quote } from "react-bootstrap-icons";
 
 const Landing = () => {
     return (
-        <main className="flex h-svh w-svw items-center justify-center">
+        <main className="flex h-screen w-full items-center justify-center">
             <ContentWrapper>
                 <div className="flex items-center justify-center gap-10">
 
@@ -22,11 +21,11 @@ const Landing = () => {
                                 opacity: 0
                             }}
                             animate={{
-                                opacity: [0.2, 0, 0, 0, 0.35, 0, 0.5, 0]
+                                opacity: [0.4, 0, 0, 0, 0.6, 0, 0.8, 0]
                             }}
                             
                             transition={{
-                                duration: 3, repeat: Infinity, ease: steps(7)
+                                duration: 5, repeat: Infinity, ease: steps(7)
                             }}
                             src="/photo_cv_8bit.png"
                             alt="8bit_nikita"
@@ -39,8 +38,22 @@ const Landing = () => {
                         
                         <div className="flex flex-col gap-2">
                             <div className="flex gap-6">
-                                <p className="font-pixel text-5xl inline-block">Nikita Ziuzin</p>
-                                <img src="/8bit_laptop.png" alt="Laptop image" className="w-14 h-10 mt-auto"/>
+                                <p className="font-pixel text-5xl inline-block text-violet-500">Nikita Ziuzin &lt;
+                                    <motion.span
+                                        initial={{
+                                            opacity: 1
+                                        }}
+                                        animate={{
+                                            opacity: 0
+                                        }}
+                                        transition={{
+                                            duration: 1, ease: steps(2), repeat: Infinity
+                                        }}
+                                        >/
+                                    </motion.span>
+                                    &gt;
+                                </p>
+                                {/* <img src="/8bit_laptop.png" alt="Laptop image" className="w-14 h-10 mt-auto"/> */}
                             </div>
 
                             <div className="flex items-center gap-3 font-pixel text-violet-200 text-sm">

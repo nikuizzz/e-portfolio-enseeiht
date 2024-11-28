@@ -3,7 +3,7 @@ import { ContentWrapper } from "../exports"
 
 const Header = () => {
     return (
-        <header className="fixed bg-violet-500 w-full border-b-3 border-violet-400 z-50">
+        <header className="fixed flex justify-center bg-violet-500 w-full border-b-3 border-violet-400 z-50">
             <ContentWrapper className={clsx(
                 "flex justify-between items-center py-2", 
                 )}>
@@ -15,7 +15,7 @@ const Header = () => {
                 {/* Links */}
                 <div className="flex items-center gap-5">
                     <a href="TODO" className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">Welcome</a>
-                    <a href="TODO" className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">Engineer course</a>
+                    <a href="TODO" className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">Engineering course</a>
                     <a href="TODO" className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">International</a>
                     <a href="TODO" className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">Civic engagement</a>
                     <a href="TODO" className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">Sports</a>
