@@ -1,4 +1,5 @@
-import { Background, Header, Landing } from "./exports"
+import { Demo } from "@/exports";
+import { Background, Header, Landing } from "@/exports";
 
 const App = () => {
     return (
@@ -6,8 +7,9 @@ const App = () => {
             {/* <Background /> */}
             <Header />
             <Landing />
+            <Demo />
         </>
-    )
-}
+    );
+};
 
-export default App
+export default App;
