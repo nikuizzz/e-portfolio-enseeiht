@@ -1,30 +1,7 @@
 import React, { useState } from "react";
-import { Strings, ContentWrapper, Button } from "../exports";
+import { Strings, ContentWrapper, Button, SectionMotionContainer } from "../exports";
 import clsx from "clsx";
-import { easeOut, motion, steps } from "framer-motion";
-
-const SectionMotionContainer = ({ children, className = "" }) => {
-    return (
-        <motion.div
-            initial={{
-                opacity: 0,
-            }}
-            animate={{
-                opacity: 1,
-            }}
-            exit={{
-                opacity: 0,
-            }}
-            transition={{
-                duration: 1,
-                ease: easeOut,
-            }}
-            className={className}
-        >
-            {children}
-        </motion.div>
-    );
-};
+import { motion, steps } from "framer-motion";
 
 const ProjectSection = ({ children, img, title, tech }) => {
     return (
