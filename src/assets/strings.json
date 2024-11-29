@@ -2,26 +2,78 @@
     "elevator_speech": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam aperiam recusandae, quis accusamus a, commodi quod, quae dolor incidunt praesentium neque quas autem corrupti fuga nobis ratione eligendi odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam aperiam recusandae, quis accusamus a, commodi quod, quae dolor incidunt praesentium neque quas autem corrupti fuga nobis ratione eligendi odio.",
     "engineering_course": {
         "iut": {
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam aperiam recusandae, quis accusamus a, commodi quod, quae dolor incidunt praesentium neque quas autem corrupti fuga nobis ratione eligendi odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam aperiam recusandae, quis accusamus a, commodi quod, quae dolor incidunt praesentium neque quas autem corrupti fuga nobis ratione eligendi odio.",
-            "project": [
+            "title": "IUT de Saint-Malo",
+            "link": "https://iut-stmalo.univ-rennes.fr/",
+            "description": "I've started my journey in the IT sphere by obtaining a bachelor's degree in Networks & Telecommunications at the IUT of Saint-Malo, in France. During these two years I've gained solid knowledge in several domains of IT,such as networking, telecommunications and programming. All while studying at the university, I was also \"working\"as a network technician apprentice at the departamental council of Finistère (29), a precious experience that allowedme to consolidate the basics that I've obtained at the IUT by working on real projects.",
+            "projects_intro": "Talking about projects, here as some of them, realized both at university and at \"work\".",
+            "projects": [
                 {
-                    "title": "WEI Website",
-                    "img": "/photo_cv.png",
-                    "description": "lorem ipsum"
+                    "title": "Network automation tool",
+                    "tech": [
+                        "Python",
+                        "Ansible",
+                        "Virtualization"
+                    ],
+                    "img": "/projects/iut/network.png",
+                    "description": "For my final IUT project, I had to create a network automation tool for my company (dpt. Council of Finistère). The goal was to create a powerful yet ease-to-use software that any technician could quickly get to grips with. Based on Python and Ansible, this tool can generate network configurations and directly apply them on hundreds of equipments (a task that formerly requested considerable amounts of time and was a big source of errors)."
                 },
                 {
                     "title": "Graduation ceremony website",
-                    "img": "/photo_cv.png",
-                    "description": "lorem ipsum"
+                    "tech": [
+                        "HTML",
+                        "CSS",
+                        "Javascript"
+                    ],
+                    "img": "/projects/iut/rdd.png",
+                    "description": "Another big project that I had the opportunity to work on was the creation of a website for the graduation ceremony of the Network & Telecommunications department. This website provided future graduates all the important information about the ceremony and also gave them to opportunity to get their places, directly on the website. I mainly participated in the front-end development, while my group worked on the back-end."
                 },
                 {
-                    "title": "Network automation tool",
-                    "img": "/photo_cv.png",
-                    "description": "lorem ipsum"
+                    "title": "WEI Website",
+                    "tech": [
+                        "HTML",
+                        "CSS",
+                        "Javascript"
+                    ],
+                    "img": "/projects/iut/wei.png",
+                    "description": "One of some less significant projects of mine was the creation of another website for my university. Each year, the BDE (Student Leadership Office) organizes a so called \"week-end of integration\" for the new students. My goal in this project was to design and create the website, providing potential participants with every bit of information they could need."
                 }
             ]
         },
-        "enseeiht": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam aperiam recusandae, quis accusamus a, commodi quod, quae dolor incidunt praesentium neque quas autem corrupti fuga nobis ratione eligendi odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam aperiam recusandae, quis accusamus a, commodi quod, quae dolor incidunt praesentium neque quas autem corrupti fuga nobis ratione eligendi odio.",
-        "coming_soon": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam aperiam recusandae, quis accusamus a, commodi quod, quae dolor incidunt praesentium neque quas autem corrupti fuga nobis ratione eligendi odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam aperiam recusandae, quis accusamus a, commodi quod, quae dolor incidunt praesentium neque quas autem corrupti fuga nobis ratione eligendi odio."
+        "enseeiht": {
+            "title": "ENSEEIHT",
+            "link": "https://www.enseeiht.fr/fr/index.html",
+            "description": "At the current stage of my carreer I am a first-year computer science engineer student at the ENSEEIHT (École nationale supérieure d'électrotechnique, d'électronique, d'informatique, d'hydraulique et des télécommunications). I'm also an apprentice android developper for a branch of Renault Group, Ampere Software Technology. At the ENSEEIHT, I primarly study computer science, programming, mathematics and soft skills (see the whole course here). On the other hand, my apprenticeship allows me to put in work the things I learn at school, mostly by developping on-board applications for Renault Group's cars and then testing them on these same cars. Sounds cool, doesn't it?",
+            "projects_intro": "Here are some of my current projects that are both personal and professionnal.",
+            "projects": [
+                {
+                    "title": "Alpine Telemetrics",
+                    "tech": [
+                        "Kotlin",
+                        "Reactive Programming"
+                    ],
+                    "img": "/projects/enseeiht/alpine.png",
+                    "description": "Alpine Telemetrics is my current project at Ampere. It is an on-board application for the new series of Alpine cars that allows their drivers to gather some live information about their car, such as G-force, lap time, brake or tyres temperatures and many more. It was concepted as a mini video-game inside of your car that allows you to enhance your track performance, especially by completing some challenges or following built-in coaching tutorials."
+                },
+                {
+                    "title": "Rennes Immobilier",
+                    "tech": [
+                        "React",
+                        "Tailwind"
+                    ],
+                    "img": "/projects/enseeiht/rennes.png",
+                    "description": "This is one of the biggest projects I have had the opportunity to work on, at this stage of my career. Rennes Immobilier is an Airbnb-like website that I'm currently working on with one of my friends from the IUT. While he's working on the back-end, I'm in charge of the UI/UX of Rennes Immobilier's website, as well as the front-end development itself."
+                }
+            ]
+        },
+        
+        "coming_soon": {
+            "title": "Coming soon...",
+            "description": "Well... this section's name is pretty self-explanotary, isn't it? For the moment I cannot tell you (neither can I tell it to myself) what route my career will take after graduating from the ENSEEIHT. All I can say for now is that I like what I'm doing and I'd like to pursue in this field of IT for some part of my life after my graduation. But keep in mind that I am a very manual person, so there is a considerable possibility that in 10 years from now you would rather find me opening a garage than opening a tech start-up. Time will show everything!"
+        }
+    },
+    
+    "links": {
+        "linkedin": "https://www.linkedin.com/in/nikita-ziuzin/",
+        "youtube": "https://www.youtube.com/@nikuiz"
     }
 }

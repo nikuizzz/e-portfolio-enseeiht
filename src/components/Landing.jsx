@@ -27,7 +27,7 @@ const Landing = () => {
                             transition={{
                                 duration: 5, repeat: Infinity, ease: steps(7)
                             }}
-                            src="/photo_cv_8bit.png"
+                            src="/8bit_images/photo_cv_8bit.png"
                             alt="8bit_nikita"
                             className="absolute inset-0"
                         />
@@ -53,7 +53,6 @@ const Landing = () => {
                                     </motion.span>
                                     &gt;
                                 </p>
-                                {/* <img src="/8bit_laptop.png" alt="Laptop image" className="w-14 h-10 mt-auto"/> */}
                             </div>
 
                             <div className="flex items-center gap-3 font-pixel text-violet-200 text-sm">
@@ -79,17 +78,17 @@ const Landing = () => {
 
                         <p className="text-sm">{Strings.elevator_speech}</p>
 
-                        <div className="flex gap-6 self-end">
+                        <div className="flex gap-4 self-end">
                             <Button 
                                 text={"See my english resume"}
                                 fun={() => console.log("TODO english resume")}
-                                src={"/8bit_usa_flag.png"}
+                                src={"/8bit_images/usa_flag.png"}
                             />
                             
                             <Button 
                                 text={"See my french resume"}
                                 fun={() => console.log("TODO english resume")}
-                                src={"/8bit_french_flag.png"}
+                                src={"/8bit_images/french_flag.png"}
                             />
                         </div>
                     </div>
