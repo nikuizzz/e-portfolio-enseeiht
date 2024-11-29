@@ -19,7 +19,7 @@ p, span {
 }
 
 ::selection {
-    @apply bg-violet-200
+    @apply bg-violet-900
 }
 
 .highlight {

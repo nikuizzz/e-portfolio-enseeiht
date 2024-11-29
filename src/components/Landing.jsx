@@ -34,7 +34,7 @@ const Landing = () => {
                     </div>
 
                     {/* TEXT */}
-                    <div className="flex flex-col gap-20">
+                    <div className="flex flex-col gap-10">
                         
                         <div className="flex flex-col gap-2">
                             <div className="flex gap-6">
@@ -75,8 +75,12 @@ const Landing = () => {
                                 </span>
                             </div>
                         </div>
-
-                        <p className="text-sm">{Strings.elevator_speech}</p>
+                                        
+                        <div className="flex flex-col gap-2">
+                            {Strings.elevator_speech.map ( (speech, index) => (
+                                <p className="text-sm" key={index}>{speech}</p>
+                            ))}
+                        </div>
 
                         <div className="flex gap-4 self-end">
                             <Button 

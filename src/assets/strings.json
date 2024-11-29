@@ -1,5 +1,9 @@
 {
-    "elevator_speech": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam aperiam recusandae, quis accusamus a, commodi quod, quae dolor incidunt praesentium neque quas autem corrupti fuga nobis ratione eligendi odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam aperiam recusandae, quis accusamus a, commodi quod, quae dolor incidunt praesentium neque quas autem corrupti fuga nobis ratione eligendi odio.",
+    "elevator_speech": [
+        "Hello! My name is Nikita. I am a future software engineer currently studying computer science at one of the most reputed French engineering schools, the ENSEEIHT. I'm trying to specialize in software development and especially the car industry, which is one of the reasons why I'm currently working as an apprentice android developer for Ampere Software Technology.",
+        "As you could have guessed by now, this is my e-portfolio website. Here you can find some of the most important information about my current studies or the projects I'm working on. Besides that, you can also find some more personal facts about me, especially the stuff I do outside of school/work (sports, civic engagement, people that inspire me).",
+        "Have a good browsing! ;)"
+    ],
     "engineering_course": {
         "iut": {
             "title": "IUT de Saint-Malo",
@@ -42,7 +46,7 @@
         "enseeiht": {
             "title": "ENSEEIHT",
             "link": "https://www.enseeiht.fr/fr/index.html",
-            "description": "At the current stage of my carreer I am a first-year computer science engineer student at the ENSEEIHT (École nationale supérieure d'électrotechnique, d'électronique, d'informatique, d'hydraulique et des télécommunications). I'm also an apprentice android developper for a branch of Renault Group, Ampere Software Technology. At the ENSEEIHT, I primarly study computer science, programming, mathematics and soft skills (see the whole course here). On the other hand, my apprenticeship allows me to put in work the things I learn at school, mostly by developping on-board applications for Renault Group's cars and then testing them on these same cars. Sounds cool, doesn't it?",
+            "description": "At the current stage of my carreer I am a first-year computer science engineer student at the ENSEEIHT (École nationale supérieure d'électrotechnique, d'électronique, d'informatique, d'hydraulique et des télécommunications). I'm also an apprentice android developper for a branch of Renault Group, Ampere Software Technology. At the ENSEEIHT, I primarly study computer science, programming, mathematics and soft skills. On the other hand, my apprenticeship allows me to put in work the things I learn at school, mostly by developping on-board applications for Renault Group's cars and then testing them on these same cars. Sounds cool, doesn't it?",
             "projects_intro": "Here are some of my current projects that are both personal and professionnal.",
             "projects": [
                 {

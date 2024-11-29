@@ -193,7 +193,7 @@ const SectionComingSoon = () => {
                 </p>
             </motion.div>
 
-            <div className="flex flex-col w-3/4 gap-4">
+            <div className="flex flex-col w-3/4 gap-8">
                 <p className="text-justify">{Strings.engineering_course.coming_soon.description}</p>
 
                 <p className="text-justify">I suggest you following me on my professionnal social media to keep track of my incoming projects!</p>
