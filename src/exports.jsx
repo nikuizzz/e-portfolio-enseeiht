@@ -7,5 +7,6 @@ export { default as Button } from "@/components/Button"
 export { default as SectionMotionContainer } from "@/components/SectionMotionContainer"
 
 export { default as Engineering } from "@/pages/Engineering";
+export { default as International } from "@/pages/International";
 
 export { default as Strings } from "@/assets/strings";

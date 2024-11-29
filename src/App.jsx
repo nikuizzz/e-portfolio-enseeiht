@@ -1,4 +1,4 @@
-import { Background, Header, Landing, Engineering } from "@/exports";
+import { Background, Header, Landing, Engineering, International } from "@/exports";
 
 const App = () => {
     return (
@@ -7,6 +7,7 @@ const App = () => {
             <Header />
             <Landing />
             <Engineering />
+            <International />
         </>
     );
 };

@@ -19,6 +19,10 @@ export default {
             },
             borderWidth: {
                 3: "3px"
+            },
+            spacing: {
+                "section-title-offset": "5rem",
+                "section-offset": "12rem",
             }
         },
     },

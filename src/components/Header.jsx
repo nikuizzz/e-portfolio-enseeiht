@@ -1,5 +1,5 @@
 import clsx from "clsx"
-import { ContentWrapper } from "../exports"
+import { Strings, ContentWrapper } from "../exports"
 
 const Header = () => {
     return (
@@ -14,12 +14,12 @@ const Header = () => {
 
                 {/* Links */}
                 <div className="flex items-center gap-5">
-                    <a href="TODO" className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">Welcome</a>
-                    <a href="TODO" className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">Engineering course</a>
-                    <a href="TODO" className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">International</a>
-                    <a href="TODO" className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">Civic engagement</a>
-                    <a href="TODO" className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">Sports</a>
-                    <a href="TODO" className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">Career development</a>
+                    <a href="TODO" className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">{Strings.welcome.title}</a>
+                    <a href="TODO" className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">{Strings.engineering_course.title}</a>
+                    <a href="TODO" className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">{Strings.international.title}</a>
+                    <a href="TODO" className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">{Strings.civic_engagement.title}</a>
+                    <a href="TODO" className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">{Strings.sports.title}</a>
+                    <a href="TODO" className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">{Strings.career_development.title}</a>
                 </div>
             </ContentWrapper>
         </header>

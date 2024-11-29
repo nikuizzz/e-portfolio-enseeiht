@@ -1,10 +1,14 @@
 {
-    "elevator_speech": [
-        "Hello! My name is Nikita. I am a future software engineer currently studying computer science at one of the most reputed French engineering schools, the ENSEEIHT. I'm trying to specialize in software development and especially the car industry, which is one of the reasons why I'm currently working as an apprentice android developer for Ampere Software Technology.",
-        "As you could have guessed by now, this is my e-portfolio website. Here you can find some of the most important information about my current studies or the projects I'm working on. Besides that, you can also find some more personal facts about me, especially the stuff I do outside of school/work (sports, civic engagement, people that inspire me).",
-        "Have a good browsing! ;)"
-    ],
+    "welcome": {
+        "title": "Welcome",
+        "elevator_speech": [
+            "Hello! My name is Nikita. I am a future software engineer currently studying computer science at one of the most reputed French engineering schools, the ENSEEIHT. I'm trying to specialize in software development and especially the car industry, which is one of the reasons why I'm currently working as an apprentice android developer for Ampere Software Technology.",
+            "As you could have guessed by now, this is my e-portfolio website. Here you can find some of the most important information about my current studies or the projects I'm working on. Besides that, you can also find some more personal facts about me, especially the stuff I do outside of school/work (sports, civic engagement, people that inspire me).",
+            "Have a good browsing! ;)"
+        ]
+    },
     "engineering_course": {
+        "title": "Engineering course",
         "iut": {
             "title": "IUT de Saint-Malo",
             "link": "https://iut-stmalo.univ-rennes.fr/",
@@ -68,14 +72,24 @@
                     "description": "This is one of the biggest projects I have had the opportunity to work on, at this stage of my career. Rennes Immobilier is an Airbnb-like website that I'm currently working on with one of my friends from the IUT. While he's working on the back-end, I'm in charge of the UI/UX of Rennes Immobilier's website, as well as the front-end development itself."
                 }
             ]
-        },
-        
+        }, 
         "coming_soon": {
             "title": "Coming soon...",
             "description": "Well... this section's name is pretty self-explanotary, isn't it? For the moment I cannot tell you (neither can I tell it to myself) what route my career will take after graduating from the ENSEEIHT. All I can say for now is that I like what I'm doing and I'd like to pursue in this field of IT for some part of my life after my graduation. But keep in mind that I am a very manual person, so there is a considerable possibility that in 10 years from now you would rather find me opening a garage than opening a tech start-up. Time will show everything!"
         }
     },
-    
+    "international": {
+        "title": "International"
+    },
+    "civic_engagement": {
+        "title": "Civic engagement"
+    },
+    "sports": {
+        "title": "Sports"
+    },
+    "career_development": {
+        "title": "Career development"
+    },
     "links": {
         "linkedin": "https://www.linkedin.com/in/nikita-ziuzin/",
         "youtube": "https://www.youtube.com/@nikuiz"

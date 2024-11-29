@@ -77,7 +77,7 @@ const Landing = () => {
                         </div>
                                         
                         <div className="flex flex-col gap-2">
-                            {Strings.elevator_speech.map ( (speech, index) => (
+                            {Strings.welcome.elevator_speech.map ( (speech, index) => (
                                 <p className="text-sm" key={index}>{speech}</p>
                             ))}
                         </div>

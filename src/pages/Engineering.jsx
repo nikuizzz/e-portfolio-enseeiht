@@ -198,8 +198,8 @@ const Engineering = () => {
     const [activeTab, setActiveTab] = useState(2);
 
     return (
-        <div className="mb-96 flex justify-center">
-            <ContentWrapper className="flex flex-col items-center justify-center">
+        <div className="mb-section-offset flex justify-center">
+            <ContentWrapper className="mb-section-title-offset flex flex-col items-center justify-center">
                 <p className="mb-20 font-pixel text-5xl text-violet-500">
                     Engineering course
                 </p>
