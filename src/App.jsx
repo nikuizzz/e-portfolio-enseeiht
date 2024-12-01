@@ -1,5 +1,4 @@
-import { Background, Header, Landing, Engineering, International } from "@/exports";
-import CivicEngagement from "./pages/CivicEngagement";
+import { Background, Header, Landing, Engineering, International, CivicEngagement, CareerDevelopment, Other, Footer } from "@/exports";
 
 const App = () => {
     return (
@@ -10,6 +9,9 @@ const App = () => {
             <Engineering />
             <International />
             <CivicEngagement />
+            <CareerDevelopment />
+            <Other />
+            <Footer />
         </>
     );
 };

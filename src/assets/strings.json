@@ -136,8 +136,55 @@
             }
         ]
     },
-    "sports": {
-        "title": "Sports"
+    "other": {
+        "title": "Other",
+        "tabs": [
+            {
+                "title": "Basket-Ball",
+                "fun_fact": {
+                    "text": "LeBron and Bronny James are the first father-son NBA duo.",
+                    "url": "https://www.nba.com/news/lebron-bronny-james-make-history-play-together"
+                },
+                "description": "One of my (two) favorite sports is Basket-Ball. I've started playing it in middle school and I am still passionate about this game. This is one of the reasons I'm currently part of one of the ENSEEIHT's basket-ball teams. It allows me to keep practicing and enhancing some skills that may become useful even outside of the basket-ball court, for example team-working.",
+                "img": "/8bit_images/miami_heat.png",
+                "button": {
+                    "present": true,
+                    "text": "Follow my favorite NBA team",
+                    "img": "/8bit_images/nba.png",
+                    "url": "https://www.nba.com/stats/team/1610612748"
+                }
+            },
+            {
+                "title": "BMX Freestyle",
+                "fun_fact": {
+                    "text": "Three French riders sweep the podium in Paris 2024 BMX racing.",
+                    "url": "https://olympics.com/fr/paris-2024/resultats/cyclisme-bmx-racing/hommes/fnl-000100--"
+                },
+                "description": "My other favorite sport is the BMX Freestyle - an extreme sport that recently became an olympic discipline. While competing, the goal is to accomplish the most spectacular tricks, ofter evolving flying out of ramps, rotating or flipping yourself in order to get the highest score by the jury. To win such competitions, riders have to invent new tricks often involving their creativity - a skill that is useful to me in my professionnal career.",
+                "img": "/8bit_images/bmx_1.png",
+                "button": {
+                    "present": true,
+                    "text": "Take a look at my favorite BMX video",
+                    "img": "/8bit_images/youtube.png",
+                    "url": "https://www.youtube.com/watch?v=-GRkooVigb0&t=2s"
+                }
+            },
+            {
+                "title": "Rubiks-Cube",
+                "fun_fact": {
+                    "text": "The current 3x3 world record is 3'13''.",
+                    "url": "https://www.worldcubeassociation.org/results/records"
+                },
+                "description": "A favorite hobby of mine is Rubiks-Cube solving, also called speed cubing. Solving the 3x3 involves memorizing hundreds of unique algorithms and enhances both memory and problem solving, two essential skills in the IT engineering field.",
+                "img": "/8bit_images/rubiks_cube.png",
+                "button": {
+                    "present": false,
+                    "text": "",
+                    "img": "",
+                    "url": ""
+                }
+            }
+        ]
     },
     "career_development": {
         "title": "Career development"

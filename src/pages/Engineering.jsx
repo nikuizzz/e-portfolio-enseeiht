@@ -147,7 +147,10 @@ const SectionENSEEIHT = () => {
 
 const SectionComingSoon = () => {
     return (
-        <SectionMotionContainer className="mt-20 flex flex-col items-center justify-center gap-10">
+        <SectionMotionContainer className={clsx(
+            "mt-20 flex flex-col items-center justify-center gap-10 p-10",
+            "border-3 border-violet-400 card-shadow bg-zinc-800"
+            )}>
             <motion.div
                 initial={{
                     opacity: 1,
@@ -174,18 +177,16 @@ const SectionComingSoon = () => {
                 <p className="text-justify">I suggest you following me on my professionnal social media to keep track of my incoming projects!</p>
                 
                 <div className="flex gap-4">
-                    <a href={Strings.links.linkedin} target="_blank">
-                        <Button 
-                            text={"Follow me on LinkedIn"}
-                            src={"/8bit_images/linkedin.png"}
-                            />
-                    </a>
-                    <a href={Strings.links.youtube} target="_blank">
-                        <Button 
-                            text={"Follow me on YouTube"}
-                            src={"/8bit_images/youtube.png"}
-                            />
-                    </a>
+                    <Button 
+                        text={"Follow me on LinkedIn"}
+                        src={"/8bit_images/linkedin.png"}
+                        fun={() => window.open(Strings.links.linkedin, "_blank")}
+                        />
+                    <Button 
+                        text={"Follow me on YouTube"}
+                        src={"/8bit_images/youtube.png"}
+                        fun={() => window.open(Strings.links.youtube, "_blank")}
+                        />
                 </div>
             </div>
         </SectionMotionContainer>

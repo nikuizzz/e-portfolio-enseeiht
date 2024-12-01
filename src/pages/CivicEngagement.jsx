@@ -30,7 +30,17 @@ const Timeline = (experiences) => {
                     className="flex justify-end items-center pe-2 absolute left-0 top-0 bottom-0 bg-violet-500"
                 >
                     {fillPercentage > 10 && (
-                        <span>{Math.round(fillPercentage)} %</span>
+                        <motion.div
+                            initial={{
+                                opacity: 0
+                            }}
+                            animate={fillInitialized ? {
+                                opacity: 1
+                            } : {}}
+                            transition={{
+                                duration: 2, ease: "easeIn"
+                            }}
+                        >{Math.round(fillPercentage)} %</motion.div>
                     )}
                 </motion.div>
 
@@ -81,21 +91,11 @@ const CivicEngagement = () => {
     return (
         <div className="mb-section-offset flex justify-center">
             <ContentWrapper className="mb-section-title-offset flex flex-col items-center justify-center">
-                <p className="mb-section-title-offset font-pixel text-5xl text-violet-500">
-                    {Strings.civic_engagement.title}
-                </p>
-
-                <Timeline experiences={experiences} />
-
-                <div className="flex flex-col w-full gap-8">
-                    {
-                        experiences.map( (experience, index) => (
-                            <ExperienceSection 
-                                experience={experience}
-                                key={index}
-                            />
-                        ))
-                    }
+                <div className="flex flex-col gap-2 mb-section-title-offset">
+                    <p className="font-pixel text-5xl text-violet-500">
+                        {Strings.civic_engagement.title}
+                    </p>
+                    
                     <motion.div
                         initial={{
                             opacity: 1,
@@ -110,8 +110,22 @@ const CivicEngagement = () => {
                         }}
                         className="flex flex-col items-center gap-2"
                     >
-                        <p className="text-5xl text-violet-500">To be continued...</p>
+                        <p className="text-violet-500">(To be continued...)</p>
                     </motion.div>
+                </div>
+
+
+                <Timeline experiences={experiences} />
+
+                <div className="flex flex-col w-full gap-8">
+                    {
+                        experiences.map( (experience, index) => (
+                            <ExperienceSection 
+                                experience={experience}
+                                key={index}
+                            />
+                        ))
+                    }
                 </div>
             </ContentWrapper>
         </div>

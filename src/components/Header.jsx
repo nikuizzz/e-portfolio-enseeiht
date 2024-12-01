@@ -18,8 +18,8 @@ const Header = () => {
                     <a href="TODO" className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">{Strings.engineering_course.title}</a>
                     <a href="TODO" className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">{Strings.international.title}</a>
                     <a href="TODO" className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">{Strings.civic_engagement.title}</a>
-                    <a href="TODO" className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">{Strings.sports.title}</a>
                     <a href="TODO" className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">{Strings.career_development.title}</a>
+                    <a href="TODO" className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">{Strings.other.title}</a>
                 </div>
             </ContentWrapper>
         </header>
