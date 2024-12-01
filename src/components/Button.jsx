@@ -5,7 +5,7 @@ const Button = ({text, fun, img="", className="", active=false}) => {
         <button
             className={clsx(
                 "border-3 border-violet-400 card-shadow",
-                "px-4 py-3",
+                "md:px-4 py-3 px-3",
                 "flex gap-3 items-center justify-center",
                 "hover:bg-violet-500 hover:scale-[97.5%]",
                 {

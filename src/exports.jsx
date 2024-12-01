@@ -4,6 +4,7 @@ export { default as BackgroundBoxes } from "@/components/BackgroundBoxes"
 export { default as Landing } from "@/components/Landing"
 export { default as Button } from "@/components/Button"
 export { default as SectionMotionContainer } from "@/components/SectionMotionContainer"
+export { default as SectionTitle } from "@/components/SectionTitle"
 
 export { default as Header } from "@/components/Header"
 export { default as EngineeringCourse } from "@/pages/EngineeringCourse";

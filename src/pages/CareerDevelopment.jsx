@@ -4,6 +4,7 @@ import {
     Button,
     ContentWrapper,
     SectionMotionContainer,
+    SectionTitle,
 } from "../exports";
 import clsx from "clsx";
 import { motion, steps } from "framer-motion";
@@ -12,7 +13,7 @@ const VideoSection = () => {
     return (
         <SectionMotionContainer
             className={clsx(
-                "flex aspect-video w-3/4 flex-col items-center justify-center gap-10",
+                "flex aspect-video w-full flex-col items-center justify-center gap-10 lg:w-3/4",
                 "card-shadow border-3 border-violet-400 bg-zinc-800",
             )}
         >
@@ -60,7 +61,11 @@ const ProfileCard = (profile) => {
                         {profile.url === "" ? (
                             profile.name
                         ) : (
-                            <a href={profile.url} className="-underline">
+                            <a
+                                href={profile.url}
+                                target="_blank"
+                                className="-underline"
+                            >
                                 {profile.name}
                             </a>
                         )}
@@ -71,6 +76,7 @@ const ProfileCard = (profile) => {
                         at{" "}
                         <a
                             href={profile.institution.url}
+                            target="_blank"
                             className="-underline"
                         >
                             {profile.institution.name}
@@ -86,11 +92,12 @@ const ProfileCard = (profile) => {
         </motion.div>
     );
 };
+
 const ProfilesSection = () => {
     const profiles = Strings.career_development.profiles;
 
     return (
-        <div className="flex w-full justify-center gap-10 px-16">
+        <div className="flex w-full flex-col justify-center gap-10 md:flex-row lg:px-16">
             {profiles.map((profile, index) => (
                 <ProfileCard profile={profile} key={index} />
             ))}
@@ -107,47 +114,69 @@ const CareerDevelopment = () => {
             id={Strings.career_development.id}
         >
             <ContentWrapper className="flex flex-col items-center">
-                <p className="font-pixel text-5xl text-violet-500">
-                    {Strings.career_development.title}
-                </p>
+                <SectionTitle title={Strings.career_development.title} />
 
-                <div className="mb-section-title-offset mt-8 flex gap-4">
-                    <Button
-                        text={"Elevator pitch"}
-                        fun={() => setActiveSection(0)}
-                        className={clsx({
-                            "opacity-25": activeSection !== 0,
-                        })}
-                        active={activeSection === 0}
-                    />
-                    <Button
-                        text={"Model profiles"}
-                        fun={() => setActiveSection(1)}
-                        className={clsx({
-                            "opacity-25": activeSection !== 1,
-                        })}
-                        active={activeSection === 1}
-                    />
+                <div className="mb-10 mt-section-title-offset flex flex-col-reverse gap-4 md:mb-section-title-offset md:flex-row w-full justify-center">
+                    <div className="flex gap-4">
+                        <Button
+                            text={"Elevator pitch"}
+                            fun={() => setActiveSection(0)}
+                            className={clsx("flex-1 md:flex-auto", {
+                                "opacity-25": activeSection !== 0,
+                            })}
+                            active={activeSection === 0}
+                        />
+                        <Button
+                            text={"Model profiles"}
+                            fun={() => setActiveSection(1)}
+                            className={clsx("flex-1 md:flex-auto", {
+                                "opacity-25": activeSection !== 1,
+                            })}
+                            active={activeSection === 1}
+                        />
+                    </div>
 
-                    <span className="mx-4 my-auto h-4 w-[1.5px] bg-violet-500" />
-
-                    <Button
-                        text={"English resume"}
-                        fun={() =>
-                            window.open(Strings.career_development.resume.en, "_blank")
-                        }
-                        img={"/8bit_images/flag_us.png"}
+                    <span
+                        className={clsx(
+                            "bg-violet-500",
+                            "md:mx-4 md:my-auto md:h-4 md:w-[1.5px]",
+                            "mx-auto my-2 h-[1.5px] w-1/2",
+                        )}
                     />
 
-                    <Button
-                        text={"French resume"}
-                        fun={() =>
-                            window.open(Strings.career_development.resume.fr, "_blank")
-                        }
-                        img={"/8bit_images/flag_fr.png"}
-                    />
+                    <div className="flex gap-4">
+                        <Button
+                            text={"English resume"}
+                            fun={() =>
+                                window.open(
+                                    Strings.career_development.resume.en,
+                                    "_blank",
+                                )
+                            }
+                            img={"/8bit_images/flag_us.png"}
+                            className={clsx("flex-1 md:flex-auto")}
+                        />
 
-                    <span className="mx-4 my-auto h-4 w-[1.5px] bg-violet-500" />
+                        <Button
+                            text={"French resume"}
+                            fun={() =>
+                                window.open(
+                                    Strings.career_development.resume.fr,
+                                    "_blank",
+                                )
+                            }
+                            img={"/8bit_images/flag_fr.png"}
+                            className={clsx("flex-1 md:flex-auto")}
+                        />
+                    </div>
+
+                    <span
+                        className={clsx(
+                            "bg-violet-500",
+                            "md:mx-4 md:my-auto md:h-4 md:w-[1.5px]",
+                            "mx-auto my-2 h-[1.5px] w-1/2",
+                        )}
+                    />
 
                     <Button
                         text={"LinkedIn profile"}

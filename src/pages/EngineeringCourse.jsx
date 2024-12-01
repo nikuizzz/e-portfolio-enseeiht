@@ -4,13 +4,14 @@ import {
     ContentWrapper,
     Button,
     SectionMotionContainer,
+    SectionTitle
 } from "../exports";
 import clsx from "clsx";
 import { motion, steps } from "framer-motion";
 
 const ProjectSection = ({ children, img, title, tech }) => {
     return (
-        <SectionMotionContainer className="flex gap-10">
+        <SectionMotionContainer className="flex md:flex-row flex-col md:gap-10 gap-2">
             <img
                 src={img}
                 alt={title}
@@ -54,7 +55,7 @@ const SectionIUT = () => {
                 {Strings.engineering_course.iut.projects_intro}
             </p>
 
-            <div className="flex gap-4">
+            <div className="flex md:flex-row flex-col gap-4">
                 {Strings.engineering_course.iut.projects.map(
                     (project, index) => (
                         <Button
@@ -79,7 +80,7 @@ const SectionIUT = () => {
                     Strings.engineering_course.iut.projects[activeProjet].tech
                 }
             >
-                <p>
+                <p className="text-justify">
                     {
                         Strings.engineering_course.iut.projects[activeProjet]
                             .description
@@ -138,7 +139,7 @@ const SectionENSEEIHT = () => {
                         .tech
                 }
             >
-                <p>
+                <p className="text-justify">
                     {
                         Strings.engineering_course.enseeiht.projects[
                             activeProjet
@@ -154,8 +155,8 @@ const SectionComingSoon = () => {
     return (
         <SectionMotionContainer
             className={clsx(
-                "mt-20 flex flex-col items-center justify-center gap-10 p-10",
-                "card-shadow border-3 border-violet-400 bg-zinc-800",
+                "mt-20 flex flex-col items-center justify-center gap-10 md:p-10",
+                "md:card-shadow md:border-3 md:border-violet-400 md:bg-zinc-800",
             )}
         >
             <motion.div
@@ -172,13 +173,13 @@ const SectionComingSoon = () => {
                 }}
                 className="flex flex-col items-center gap-2"
             >
-                <p className="text-9xl text-violet-500">Error 501</p>
-                <p className="text-violet-500">
+                <p className="md:text-9xl text-7xl text-violet-500">Error 501</p>
+                <p className="text-violet-500 md:text-md text-sm">
                     This part is not implemented (yet).
                 </p>
             </motion.div>
 
-            <div className="flex w-3/4 flex-col gap-8">
+            <div className="flex md:w-3/4 flex-col gap-8">
                 <p className="text-justify">
                     {Strings.engineering_course.coming_soon.description}
                 </p>
@@ -188,7 +189,7 @@ const SectionComingSoon = () => {
                     to keep track of my incoming projects!
                 </p>
 
-                <div className="flex gap-4">
+                <div className="flex md:flex-row flex-col gap-4">
                     <Button
                         text={"Follow me on LinkedIn"}
                         img={"/8bit_images/linkedin.png"}
@@ -221,12 +222,10 @@ const EngineeringCourse = () => {
             id={Strings.engineering_course.id}
         >
             <ContentWrapper className="flex flex-col items-center justify-center">
-                <p className="mb-20 font-pixel text-5xl text-violet-500">
-                    {Strings.engineering_course.title}
-                </p>
+                <SectionTitle title={Strings.engineering_course.title} className="mb-20"/>
 
                 {/* TIMELINE */}
-                <div className="relative flex items-center">
+                <div className="relative flex md:flex-row flex-col items-center">
                     {/* IUT SAINT-MALO */}
                     <div
                         className={clsx("relative", {
@@ -234,7 +233,7 @@ const EngineeringCourse = () => {
                             "opacity-25": activeTab !== 1,
                         })}
                     >
-                        <span className="absolute bottom-[-50%] w-full text-center font-pixel">
+                        <span className="absolute md:bottom-[-50%] top-[-50%] w-full text-center font-pixel">
                             2022-2024
                         </span>
                         <Button
@@ -245,10 +244,10 @@ const EngineeringCourse = () => {
                     </div>
 
                     <div
-                        className={clsx("h-[3px] w-40 shrink", {
-                            "bg-gradient-to-r from-violet-600 to-violet-600/25":
+                        className={clsx("md:h-[3px] md:w-40 h-14 w-[3px] shrink", {
+                            "md:bg-gradient-to-r bg-gradient-to-b from-violet-600 to-violet-600/25":
                                 activeTab === 1,
-                            "bg-gradient-to-l from-violet-600 to-violet-600/25":
+                            "md:bg-gradient-to-l bg-gradient-to-t from-violet-600 to-violet-600/25":
                                 activeTab === 2,
                             "bg-violet-600/50": activeTab === 3,
                         })}
@@ -261,7 +260,7 @@ const EngineeringCourse = () => {
                             "opacity-25": activeTab !== 2,
                         })}
                     >
-                        <span className="absolute bottom-[-50%] w-full text-center font-pixel">
+                        <span className="absolute md:bottom-[-50%] left-[-100%] translate-y-1/2 w-full text-center font-pixel">
                             2024-2027
                         </span>
                         <Button
@@ -269,20 +268,24 @@ const EngineeringCourse = () => {
                             fun={() => setActiveTab(2)}
                             active={activeTab === 2}
                         />
-                        <div className="absolute left-[-50%] right-[-50%] top-[-100%] flex flex-col items-center justify-center font-pixel">
+                        <div className={clsx(
+                            "absolute flex md:flex-col flex-row-reverse items-center justify-center font-pixel",
+                            "md:left-[-50%] md:right-[-50%] md:top-[-100%]",
+                            "right-[-135%] top-1/2 -translate-y-1/2"
+                            )}>
                             <p className="inline-block w-fit">We're here...</p>
-                            <span className="rotate-180 text-3xl leading-3">
+                            <span className="md:rotate-180 -rotate-90 text-3xl leading-3">
                                 ^
                             </span>
                         </div>
                     </div>
 
                     <div
-                        className={clsx("h-[3px] w-40 shrink", {
+                        className={clsx("md:h-[3px] md:w-40 h-14 w-[3px] shrink", {
                             "bg-violet-600/50": activeTab === 1,
-                            "bg-gradient-to-r from-violet-600 to-violet-600/25":
+                            "md:bg-gradient-to-r bg-gradient-to-b from-violet-600 to-violet-600/25":
                                 activeTab === 2,
-                            "bg-gradient-to-l from-violet-600 to-violet-600/25":
+                            "md:bg-gradient-to-l bg-gradient-to-t from-violet-600 to-violet-600/25":
                                 activeTab === 3,
                         })}
                     />

@@ -1,5 +1,5 @@
 import { motion, steps } from "framer-motion";
-import { Strings, SectionMotionContainer, ContentWrapper } from "../exports";
+import { Strings, SectionMotionContainer, ContentWrapper, SectionTitle } from "../exports";
 import { useState } from "react";
 
 const Timeline = (experiences) => {
@@ -16,7 +16,7 @@ const Timeline = (experiences) => {
     const [fillInitialized, setFillInitialized] = useState(false);
 
     return (
-        <div className="mb-section-title-offset flex w-3/4 flex-col bg-yellow-400">
+        <div className="mb-section-title-offset flex md:w-3/4 w-full flex-col bg-yellow-400">
             <div className="relative h-5 w-full bg-violet-900">
                 <motion.div
                     initial={{
@@ -60,10 +60,10 @@ const Timeline = (experiences) => {
                     )}
                 </motion.div>
 
-                <span className="absolute left-0 w-fit -translate-x-1/2 translate-y-2/3 pt-1">
+                <span className="absolute left-0 w-fit md:-translate-x-1/2 translate-y-2/3 pt-1">
                     0 hours
                 </span>
-                <span className="absolute right-0 translate-x-1/2 translate-y-2/3 pt-1">
+                <span className="absolute right-0 md:translate-x-1/2 translate-y-2/3 pt-1">
                     {civicEngagementHoursGoal} hours
                 </span>
             </div>
@@ -80,20 +80,35 @@ const ExperienceSection = (experience) => {
     experience = experience.experience;
 
     return (
-        <SectionMotionContainer className="flex gap-10">
-            <img
-                src={experience.img}
-                alt={experience.title}
-                className="card-shadow size-72 border-3 border-violet-400 object-fill"
-            />
+        <SectionMotionContainer className="flex md:flex-row flex-col gap-10">
+            <div className="flex gap-4 shrink-0">
+                <img
+                    src={experience.img}
+                    alt={experience.title}
+                    className="card-shadow md:size-72 size-32 border-3 border-violet-400 object-fill"
+                />
+
+                {/* SAME DIV 1 */}
+                <div className="flex flex-col md:hidden gap-4">
+                    <p className="text-xl text-violet-500">{experience.title}</p>
+                    <div className="flex flex-col text-sm text-violet-200">
+                        <span>Date: {experience.date}</span>
+                        <span>Duration: {experience.duration} hours</span>
+                    </div>
+                </div>
+            </div>
 
             <div className="flex flex-col">
-                <p className="text-2xl text-violet-500">{experience.title}</p>
-                <div className="mb-8 flex items-center gap-2 text-sm text-violet-200">
-                    <span>Date: {experience.date}</span>
-                    <span className="h-4 w-[1.5px] bg-violet-500"></span>
-                    <span>Duration: {experience.duration} hours</span>
-                    {/* BE CAREFUL - IS IT HOURS? */}
+
+                {/* SAME DIV 2 */}
+                <div className="md:flex flex-col hidden">
+                    <p className="text-2xl text-violet-500">{experience.title}</p>
+                    <div className="mb-8 flex items-center gap-2 text-sm text-violet-200">
+                        <span>Date: {experience.date}</span>
+                        <span className="h-4 w-[1.5px] bg-violet-500"></span>
+                        <span>Duration: {experience.duration} hours</span>
+                        {/* BE CAREFUL - IS IT HOURS? */}
+                    </div>
                 </div>
 
                 <p className="text-justify">{experience.description}</p>
@@ -111,10 +126,8 @@ const CivicEngagement = () => {
             id={Strings.civic_engagement.id}
         >
             <ContentWrapper className="flex flex-col items-center justify-center">
-                <div className="mb-section-title-offset flex flex-col gap-2">
-                    <p className="font-pixel text-5xl text-violet-500">
-                        {Strings.civic_engagement.title}
-                    </p>
+                <div className="md:mb-section-title-offset mb-10 flex flex-col gap-2">
+                    <SectionTitle title={Strings.civic_engagement.title} />
 
                     <motion.div
                         initial={{

@@ -4,6 +4,7 @@ import {
     ContentWrapper,
     Button,
     SectionMotionContainer,
+    SectionTitle
 } from "../exports";
 import React, { useState } from "react";
 
@@ -38,11 +39,11 @@ const DestinationSection = (destination) => {
                 </div>
             </div>
 
-            <div className="mb-8 flex items-center gap-2 text-sm text-violet-200">
+            <div className="mb-8 flex lg:items-center gap-2 text-sm text-violet-200">
                 <span>Universities: </span>
                 {destination.universities.map((university, index) => (
                     <React.Fragment key={index}>
-                        <a href={university.link} className="-underline">
+                        <a href={university.link} target="_blank" className="-underline">
                             {university.name}
                         </a>
                         {index < destination.universities.length - 1 && (
@@ -67,17 +68,15 @@ const International = () => {
             id={Strings.international.id}
         >
             <ContentWrapper className="flex flex-col items-center justify-center">
-                <p className="mb-20 font-pixel text-5xl text-violet-500">
-                    {Strings.international.title}
-                </p>
+                <SectionTitle title={Strings.international.title} className="mb-20"/>
 
-                <div className="flex w-full">
+                <div className="flex md:flex-row flex-col w-full">
                     <div className="flex flex-1 flex-col gap-8">
                         <p className="text-justify">
                             {Strings.international.description}
                         </p>
 
-                        <div className="flex gap-4">
+                        <div className="flex lg:flex-row flex-col gap-4">
                             {destinations.map((destination, index) => (
                                 <Button
                                     key={index}
@@ -93,9 +92,9 @@ const International = () => {
                         </div>
                     </div>
 
-                    <div className="z-10 mx-10 flex w-1 bg-violet-500" />
+                    <div className="z-10 mx-10 md:flex w-1 bg-violet-500 hidden" />
 
-                    <div className="z-10 flex flex-1 flex-col gap-8">
+                    <div className="z-10 flex flex-1 flex-col gap-8 md:mt-0 mt-8">
                         <DestinationSection
                             destination={destinations[currentDestination]}
                             key={currentDestination}
