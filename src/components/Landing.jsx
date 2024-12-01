@@ -86,13 +86,13 @@ const Landing = () => {
                             <Button 
                                 text={"See my english resume"}
                                 fun={() => console.log("TODO english resume")}
-                                src={"/8bit_images/usa_flag.png"}
+                                src={"/8bit_images/flag_us.png"}
                             />
                             
                             <Button 
                                 text={"See my french resume"}
                                 fun={() => console.log("TODO english resume")}
-                                src={"/8bit_images/french_flag.png"}
+                                src={"/8bit_images/flag_fr.png"}
                             />
                         </div>
                     </div>

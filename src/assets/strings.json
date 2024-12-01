@@ -79,10 +79,62 @@
         }
     },
     "international": {
-        "title": "International"
+        "title": "International",
+        "description": "An international mobility is an essential part of any engineering course in France. Thus, before graduating from the ENSEEIHT I will have to either do an internship abroad or go to an university in a foreign country. As I've just started my course, the urge of finding my future international experience is not pressant yet, however I already have some destinations in mind. Here are some of them.",
+        "destinations": [
+            {
+                "country": "Europe",
+                "src": "/8bit_images/flag_eu.png",
+                "description": "My desire of studying in Europe and especially in the UK is feeded by my goal of improving my English skills. Going to Cranfield's University would allow me to acquire both technical skills and the english-studying experience I'm currently missing.",
+                "universities": [
+                    {
+                        "name": "Cranfield University, UK",
+                        "link": "https://www.cranfield.ac.uk/"
+                    }
+                ]
+            },
+            {
+                "country": "North America",
+                "src": [
+                    "/8bit_images/flag_us.png",
+                    "/8bit_images/flag_ca.png"
+                ],
+                "description": "North America and especially the United States and Canada are one of my most wanted destinations. I have a willing of pursuing my career in the US, therefore this opportunity could be the the first step of this difficult journey. Two of the universities I'm interested in are Georgia Techa and ÉTS Montreal.",
+                "universities": [
+                    {
+                        "name": "Georgia Tech",
+                        "link": "https://www.gatech.edu/"
+                    },
+                    {
+                        "name": "ÉTS Montreal",
+                        "link": "https://www.etsmtl.ca/"
+                    }
+                ]
+            },
+            {
+                "country": "Russia",
+                "src": "/8bit_images/flag_ru.png",
+                "description": "Being a native russian speaker that mostly studied in France, the opportunity of studying in a russian university seems really interesting to me, especially knowing that Saint-Petersburg's State Institute of Technology is one of the best institutions in the country.",
+                "universities": [
+                    {
+                        "name": "St. Petersburg State Institute of Technology",
+                        "link": "https://spbti.ru/index-eng"
+                    }
+                ]
+            }
+        ]
     },
     "civic_engagement": {
-        "title": "Civic engagement"
+        "title": "Civic engagement",
+        "experiences": [
+            {
+                "title": "Toulouse Run Experience",
+                "img": "/civic_engagement/toulouse_run_experience.png",
+                "date": "10 Novembre 2024",
+                "duration": 6,
+                "description": "One of my first evert civic engagement experience was this year's Toulouse's marathon. As a volunteer, my mission was to prepare food and drink stands for the runners that were arriving at the marathon's village, situated right at the end of the race."
+            }
+        ]
     },
     "sports": {
         "title": "Sports"

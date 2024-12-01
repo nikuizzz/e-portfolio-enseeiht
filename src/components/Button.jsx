@@ -17,8 +17,13 @@ const Button = ({text, fun, src="", className="", active=false}) => {
             onClick={fun}
         >
             <span className="font-pixel">{text}</span>
-            {src !== "" && (
+            {src !== "" && typeof src === "string" && (
                 <img src={src} alt="" className="w-4"/>
+            )}
+            {src !== "" && Array.isArray(src) && (
+                src.map( (element, index) => (
+                    <img key={index} src={element} alt="" className="w-4"/>
+                ))
             )}
         </button>
     )

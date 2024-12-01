@@ -6,7 +6,6 @@ import { motion, steps } from "framer-motion";
 const ProjectSection = ({ children, img, title, tech }) => {
     return (
         <SectionMotionContainer className="flex gap-10">
-            {/* <> */}
             <img
                 src={img}
                 alt={title}
@@ -29,7 +28,6 @@ const ProjectSection = ({ children, img, title, tech }) => {
 
                 {children}
             </div>
-            {/* </> */}
         </SectionMotionContainer>
     );
 };
@@ -201,7 +199,7 @@ const Engineering = () => {
         <div className="mb-section-offset flex justify-center">
             <ContentWrapper className="mb-section-title-offset flex flex-col items-center justify-center">
                 <p className="mb-20 font-pixel text-5xl text-violet-500">
-                    Engineering course
+                    {Strings.engineering_course.title}
                 </p>
 
                 {/* TIMELINE */}

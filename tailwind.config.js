@@ -22,7 +22,7 @@ export default {
             },
             spacing: {
                 "section-title-offset": "5rem",
-                "section-offset": "12rem",
+                "section-offset": "10rem",
             }
         },
     },
