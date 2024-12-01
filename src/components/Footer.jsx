@@ -40,7 +40,7 @@ const Footer = () => {
                     </div>
                 </div>
                 
-                <div className="w-full h-[3px] bg-violet-400 mt-6 mb-1"></div>
+                <div className="w-full h-[3px] bg-violet-400 mt-6 mb-2"></div>
 
                 <div className="flex justify-between">
                     <p>&copy; 2024, Nikita Ziuzin</p>

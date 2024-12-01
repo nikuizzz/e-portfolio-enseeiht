@@ -194,7 +194,11 @@
     "career_development": {
         "id": "career_development",
         "title": "Career development",
-        "video": "",
+        "video": "",        
+        "resume": {
+            "en": "/career_development/resume/CV_ZIUZIN_NIKITA_ENG.pdf",
+            "fr": "/career_development/resume/CV_ZIUZIN_NIKITA_FR.pdf"
+        },
         "profiles": [
             {
                 "name": "Alexandre PAUL",

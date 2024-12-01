@@ -3,7 +3,7 @@ import { Background, Header, Landing, EngineeringCourse, International, CivicEng
 const App = () => {
     return (
         <>
-            {/* <Background /> */}
+            <Background />
             <Header />
             <Landing />
             <EngineeringCourse />

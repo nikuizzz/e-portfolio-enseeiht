@@ -128,17 +128,33 @@ const CareerDevelopment = () => {
                         })}
                         active={activeSection === 1}
                     />
-                    <span className="mx-4 my-auto h-4 w-[1.5px] bg-violet-500"></span>
+
+                    <span className="mx-4 my-auto h-4 w-[1.5px] bg-violet-500" />
+
                     <Button
                         text={"English resume"}
-                        fun={() => console.log("TODO english resume")}
+                        fun={() =>
+                            window.open(Strings.career_development.resume.en, "_blank")
+                        }
                         img={"/8bit_images/flag_us.png"}
                     />
 
                     <Button
                         text={"French resume"}
-                        fun={() => console.log("TODO english resume")}
+                        fun={() =>
+                            window.open(Strings.career_development.resume.fr, "_blank")
+                        }
                         img={"/8bit_images/flag_fr.png"}
+                    />
+
+                    <span className="mx-4 my-auto h-4 w-[1.5px] bg-violet-500" />
+
+                    <Button
+                        text={"LinkedIn profile"}
+                        fun={() =>
+                            window.open(Strings.links.linkedin, "_blank")
+                        }
+                        img={"/8bit_images/linkedin.png"}
                     />
                 </div>
 
