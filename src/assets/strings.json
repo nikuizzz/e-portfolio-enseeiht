@@ -45,7 +45,7 @@
                         "Javascript"
                     ],
                     "img": "/projects/iut/wei.png",
-                    "description": "One of some less significant projects of mine was the creation of another website for my university. Each year, the BDE (Student Leadership Office) organizes a so called \"week-end of integration\" for the new students. My goal in this project was to design and create the website, providing potential participants with every bit of information they could need."
+                    "description": "One of some less significant projects of mine was the creation of another website for my university. Each year, the Student Union organizes a so called \"week-end of integration\" for the new students. My goal in this project was to design and create the website, providing potential participants with every bit of information they could need."
                 }
             ]
         },
@@ -87,7 +87,7 @@
         "destinations": [
             {
                 "country": "Europe",
-                "src": "/8bit_images/flag_eu.png",
+                "img": "/8bit_images/flag_eu.png",
                 "description": "My desire of studying in Europe and especially in the UK is feeded by my goal of improving my English skills. Going to Cranfield's University would allow me to acquire both technical skills and the english-studying experience I'm currently missing.",
                 "universities": [
                     {
@@ -98,7 +98,7 @@
             },
             {
                 "country": "North America",
-                "src": [
+                "img": [
                     "/8bit_images/flag_us.png",
                     "/8bit_images/flag_ca.png"
                 ],
@@ -116,7 +116,7 @@
             },
             {
                 "country": "Russia",
-                "src": "/8bit_images/flag_ru.png",
+                "img": "/8bit_images/flag_ru.png",
                 "description": "Being a native russian speaker that mostly studied in France, the opportunity of studying in a russian university seems really interesting to me, especially knowing that Saint-Petersburg's State Institute of Technology is one of the best institutions in the country.",
                 "universities": [
                     {
@@ -193,10 +193,48 @@
     },
     "career_development": {
         "id": "career_development",
-        "title": "Career development"
+        "title": "Career development",
+        "video": "",
+        "profiles": [
+            {
+                "name": "Alexandre PAUL",
+                "url": "https://www.linkedin.com/in/alexpaul26/",
+                "img": "/career_development/character_1.png",
+                "situation": "student",
+                "institution": {
+                    "name": "ENSEEIHT",
+                    "url": "https://www.enseeiht.fr/fr/index.html"
+                },
+                "description": "Alexandre is currently studying electronics at the ENSEEIHT. The reason his profile caught my attention is that he is currently preparing for his semester at Georgia Tech, USA, which is a top-choice institution for my international experience. Our exchange was really rich in useful information conserning Georgia Tech."
+            },
+            {
+                "name": "Jason MAIRE",
+                "url": "",
+                "img": "/career_development/character_2.png",
+                "situation": "employee",
+                "institution": {
+                    "name": "Ampere",
+                    "url": "https://www.ampere.cars/"
+                },
+                "description": "Jason is a full-stack developer at Ampere and also my apprenticeship mentor. As I have similar career as him, I did not miss the opportunity to question him about his career path, the field he've studied in as well as the skills that he uses on a daily basis."
+            },
+            {
+                "name": "Lucile Schneider",
+                "url": "",
+                "img": "/career_development/character_3.png",
+                "situation": "employee",
+                "institution": {
+                    "name": "Ampere",
+                    "url": "https://www.ampere.cars/"
+                },
+                "description": "Lucile is also one of my colleaugues at Ampere, working as an HMI android developer. She is an ENSEEIHT's alumni from the computer science class of 2014-2017. Exchanging on her experience after the graduation was very insightful, as I was particularly seeking to discover career paths that began similarly to mine."
+            }
+        ]
     },
     "links": {
         "linkedin": "https://www.linkedin.com/in/nikita-ziuzin/",
-        "youtube": "https://www.youtube.com/@nikuiz"
+        "youtube": "https://www.youtube.com/@nikuiz",
+        "ampere": "https://www.ampere.cars/",
+        "enseeiht": "https://www.enseeiht.fr/fr/index.html"
     }
 }

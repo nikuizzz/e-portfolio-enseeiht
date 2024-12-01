@@ -110,7 +110,7 @@ const CivicEngagement = () => {
             className="flex justify-center pt-section-offset"
             id={Strings.civic_engagement.id}
         >
-            <ContentWrapper className="mb-section-title-offset flex flex-col items-center justify-center">
+            <ContentWrapper className="flex flex-col items-center justify-center">
                 <div className="mb-section-title-offset flex flex-col gap-2">
                     <p className="font-pixel text-5xl text-violet-500">
                         {Strings.civic_engagement.title}

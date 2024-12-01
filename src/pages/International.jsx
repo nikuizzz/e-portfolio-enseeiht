@@ -12,7 +12,22 @@ const DestinationSection = (destination) => {
 
     return (
         <SectionMotionContainer>
-            <p className="text-2xl text-violet-500">{destination.country}</p>
+            <div className="flex gap-2">
+                <span className="text-2xl text-violet-500">
+                    {destination.country}
+                </span>
+                <div className="w-10 flex gap-2">
+                    {typeof destination.img === "string" && (
+                        <img src={destination.img} alt={`${destination.country} flag`} />    
+                    )}
+                    {Array.isArray(destination.img) && (
+                        <>
+                            <img src={destination.img[0]} alt={`${destination.country} flag`} />    
+                            <img src={destination.img[1]} alt={`${destination.country} flag`} />    
+                        </>
+                    )}
+                </div>
+            </div>
 
             <div className="mb-8 flex items-center gap-2 text-sm text-violet-200">
                 <span>Universities: </span>
@@ -45,7 +60,7 @@ const International = () => {
             className="flex justify-center pt-section-offset"
             id={Strings.international.id}
         >
-            <ContentWrapper className="mb-section-title-offset flex flex-col items-center justify-center">
+            <ContentWrapper className="flex flex-col items-center justify-center">
                 <p className="mb-20 font-pixel text-5xl text-violet-500">
                     {Strings.international.title}
                 </p>
@@ -66,7 +81,7 @@ const International = () => {
                                         "opacity-25":
                                             currentDestination !== index,
                                     })}
-                                    src={destination.src}
+                                    img={destination.img}
                                 />
                             ))}
                         </div>

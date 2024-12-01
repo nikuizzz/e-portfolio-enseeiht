@@ -60,7 +60,7 @@ const Landing = () => {
                                 <span className="h-5 w-[2px] bg-violet-500"></span>
                                 <span className="">
                                     IT student at&nbsp;
-                                    <a href="https://www.enseeiht.fr/fr/index.html" 
+                                    <a href={Strings.links.enseeiht}
                                         className="underline underline-offset-4">
                                             ENSEEIHT
                                         </a>
@@ -68,7 +68,7 @@ const Landing = () => {
                                 <span className="h-5 w-[2px] bg-violet-500"></span>
                                 <span className="">
                                     Apprentice android developer for&nbsp;
-                                    <a href="https://www.ampere.cars/" 
+                                    <a href={Strings.links.ampere}
                                         className="underline underline-offset-4">
                                             Renault Group
                                         </a>

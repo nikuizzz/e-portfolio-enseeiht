@@ -215,7 +215,7 @@ const EngineeringCourse = () => {
             className="flex justify-center pt-section-offset"
             id={Strings.engineering_course.id}
         >
-            <ContentWrapper className="mb-section-title-offset flex flex-col items-center justify-center">
+            <ContentWrapper className="flex flex-col items-center justify-center">
                 <p className="mb-20 font-pixel text-5xl text-violet-500">
                     {Strings.engineering_course.title}
                 </p>
