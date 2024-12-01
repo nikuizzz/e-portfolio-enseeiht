@@ -191,15 +191,20 @@ const SectionComingSoon = () => {
                 <div className="flex gap-4">
                     <Button
                         text={"Follow me on LinkedIn"}
-                        src={"/8bit_images/linkedin.png"}
+                        img={"/8bit_images/linkedin.png"}
                         fun={() =>
                             window.open(Strings.links.linkedin, "_blank")
                         }
                     />
                     <Button
                         text={"Follow me on YouTube"}
-                        src={"/8bit_images/youtube.png"}
+                        img={"/8bit_images/youtube.png"}
                         fun={() => window.open(Strings.links.youtube, "_blank")}
+                    />
+                    <Button
+                        text={"Follow me on Github"}
+                        img={"/8bit_images/github.png"}
+                        fun={() => window.open(Strings.links.github, "_blank")}
                     />
                 </div>
             </div>

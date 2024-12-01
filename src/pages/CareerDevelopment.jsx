@@ -24,9 +24,8 @@ const VideoSection = () => {
                 className="h-full w-full"
                 src="https://www.youtube.com/embed/lkoTb4LSH_8"
                 title="YouTube video player"
-                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
             ></iframe>
         </SectionMotionContainer>
     );
@@ -36,17 +35,18 @@ const ProfileCard = (profile) => {
     profile = profile.profile;
 
     return (
-        <motion.div className="group card-shadow gap-2 flex flex-1 shrink-0 grow flex-col border-3 border-violet-400 bg-zinc-800 p-5 hover:bg-violet-600"
-        initial={{
-            scale: 0.75
-        }}
-        animate={{
-            scale: 1
-        }}
-        transition={{
-            duration: .25,
-            ease: steps(5, "jump-end")
-        }}
+        <motion.div
+            className="card-shadow group flex flex-1 shrink-0 grow flex-col gap-2 border-3 border-violet-400 bg-zinc-800 p-5 hover:bg-violet-600"
+            initial={{
+                scale: 0.75,
+            }}
+            animate={{
+                scale: 1,
+            }}
+            transition={{
+                duration: 0.25,
+                ease: steps(5, "jump-end"),
+            }}
         >
             <div className="flex gap-4">
                 <img
@@ -60,7 +60,9 @@ const ProfileCard = (profile) => {
                         {profile.url === "" ? (
                             profile.name
                         ) : (
-                            <a href={profile.url} className="underline underline-offset-4">{profile.name}</a>
+                            <a href={profile.url} className="-underline">
+                                {profile.name}
+                            </a>
                         )}
                     </p>
                     <p className="text-sm">
@@ -69,7 +71,7 @@ const ProfileCard = (profile) => {
                         at{" "}
                         <a
                             href={profile.institution.url}
-                            className="underline underline-offset-4"
+                            className="-underline"
                         >
                             {profile.institution.name}
                         </a>
@@ -77,7 +79,9 @@ const ProfileCard = (profile) => {
                 </div>
             </div>
 
-            <p className="text-lg text-violet-500 mt-6 group-hover:text-violet-400">Exchange details</p>
+            <p className="mt-6 text-lg text-violet-500 group-hover:text-violet-400">
+                Exchange details
+            </p>
             <p className="text-justify text-sm">{profile.description}</p>
         </motion.div>
     );
@@ -86,7 +90,7 @@ const ProfilesSection = () => {
     const profiles = Strings.career_development.profiles;
 
     return (
-        <div className="flex w-full px-16 justify-center gap-10">
+        <div className="flex w-full justify-center gap-10 px-16">
             {profiles.map((profile, index) => (
                 <ProfileCard profile={profile} key={index} />
             ))}
@@ -98,7 +102,7 @@ const CareerDevelopment = () => {
     const [activeSection, setActiveSection] = useState(0);
 
     return (
-        <SectionMotionContainer
+        <div
             className="flex justify-center pt-section-offset"
             id={Strings.career_development.id}
         >
@@ -124,12 +128,24 @@ const CareerDevelopment = () => {
                         })}
                         active={activeSection === 1}
                     />
+                    <span className="mx-4 my-auto h-4 w-[1.5px] bg-violet-500"></span>
+                    <Button
+                        text={"English resume"}
+                        fun={() => console.log("TODO english resume")}
+                        img={"/8bit_images/flag_us.png"}
+                    />
+
+                    <Button
+                        text={"French resume"}
+                        fun={() => console.log("TODO english resume")}
+                        img={"/8bit_images/flag_fr.png"}
+                    />
                 </div>
 
                 {activeSection === 0 && <VideoSection />}
                 {activeSection === 1 && <ProfilesSection />}
             </ContentWrapper>
-        </SectionMotionContainer>
+        </div>
     );
 };
 

@@ -16,14 +16,23 @@ const DestinationSection = (destination) => {
                 <span className="text-2xl text-violet-500">
                     {destination.country}
                 </span>
-                <div className="w-10 flex gap-2">
+                <div className="flex w-10 gap-2">
                     {typeof destination.img === "string" && (
-                        <img src={destination.img} alt={`${destination.country} flag`} />    
+                        <img
+                            src={destination.img}
+                            alt={`${destination.country} flag`}
+                        />
                     )}
                     {Array.isArray(destination.img) && (
                         <>
-                            <img src={destination.img[0]} alt={`${destination.country} flag`} />    
-                            <img src={destination.img[1]} alt={`${destination.country} flag`} />    
+                            <img
+                                src={destination.img[0]}
+                                alt={`${destination.country} flag`}
+                            />
+                            <img
+                                src={destination.img[1]}
+                                alt={`${destination.country} flag`}
+                            />
                         </>
                     )}
                 </div>
@@ -33,10 +42,7 @@ const DestinationSection = (destination) => {
                 <span>Universities: </span>
                 {destination.universities.map((university, index) => (
                     <React.Fragment key={index}>
-                        <a
-                            href={university.link}
-                            className="underline underline-offset-4"
-                        >
+                        <a href={university.link} className="-underline">
                             {university.name}
                         </a>
                         {index < destination.universities.length - 1 && (

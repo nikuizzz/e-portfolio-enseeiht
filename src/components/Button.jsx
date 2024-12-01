@@ -1,6 +1,6 @@
 import clsx from "clsx"
 
-const Button = ({text, fun, src="", className="", active=false}) => {
+const Button = ({text, fun, img="", className="", active=false}) => {
     return (
         <button
             className={clsx(
@@ -17,11 +17,11 @@ const Button = ({text, fun, src="", className="", active=false}) => {
             onClick={fun}
         >
             <span className="font-pixel">{text}</span>
-            {src !== "" && typeof src === "string" && (
-                <img src={src} alt="" className="w-4"/>
+            {img !== "" && typeof img === "string" && (
+                <img src={img} alt="" className="w-4"/>
             )}
-            {src !== "" && Array.isArray(src) && (
-                src.map( (element, index) => (
+            {img !== "" && Array.isArray(img) && (
+                img.map( (element, index) => (
                     <img key={index} src={element} alt="" className="w-4"/>
                 ))
             )}

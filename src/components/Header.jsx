@@ -14,12 +14,12 @@ const Header = () => {
 
                 {/* Links */}
                 <div className="flex items-center gap-5">
-                    <a href={`#${Strings.welcome.id}`} className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">{Strings.welcome.title}</a>
-                    <a href={`#${Strings.engineering_course.id}`} className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">{Strings.engineering_course.title}</a>
-                    <a href={`#${Strings.international.id}`} className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">{Strings.international.title}</a>
-                    <a href={`#${Strings.civic_engagement.id}`} className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">{Strings.civic_engagement.title}</a>
-                    <a href={`#${Strings.career_development.id}`} className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">{Strings.career_development.title}</a>
-                    <a href={`#${Strings.other.id}`} className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in">{Strings.other.title}</a>
+                    <a className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in no-a-underline" href={`#${Strings.welcome.id}`}>{Strings.welcome.title}</a>
+                    <a className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in no-a-underline" href={`#${Strings.engineering_course.id}`}>{Strings.engineering_course.title}</a>
+                    <a className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in no-a-underline" href={`#${Strings.international.id}`}>{Strings.international.title}</a>
+                    <a className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in no-a-underline" href={`#${Strings.civic_engagement.id}`}>{Strings.civic_engagement.title}</a>
+                    <a className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in no-a-underline" href={`#${Strings.career_development.id}`}>{Strings.career_development.title}</a>
+                    <a className="font-pixel text-violet-100 highlight animated-highlight after:bg-violet-400 transition-colors duration-100 ease-in no-a-underline" href={`#${Strings.other.id}`}>{Strings.other.title}</a>
                 </div>
             </ContentWrapper>
         </header>

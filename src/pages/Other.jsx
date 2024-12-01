@@ -19,7 +19,7 @@ const OtherSection = (other) => {
                     <a
                         href={other.fun_fact.url}
                         target="_blank"
-                        className="underline underline-offset-4"
+                        className="-underline"
                     >
                         {other.fun_fact.text}
                     </a>
@@ -30,7 +30,7 @@ const OtherSection = (other) => {
                 {other.button.present && (
                     <Button
                         text={other.button.text}
-                        src={other.button.img}
+                        img={other.button.img}
                         fun={() => window.open(other.button.url, "_blank")}
                         className={"self-end"}
                     />

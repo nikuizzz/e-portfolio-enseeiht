@@ -4,28 +4,31 @@ import { motion, steps } from "framer-motion";
 
 const Landing = () => {
     return (
-        <main className="flex h-screen w-full items-center justify-center" id={Strings.welcome.id}>
+        <main
+            className="flex h-screen w-full items-center justify-center"
+            id={Strings.welcome.id}
+        >
             <ContentWrapper>
                 <div className="flex items-center justify-center gap-10">
-
                     {/* PHOTO */}
-                    <div className="shrink-0 group relative size-96 overflow-hidden border-3 border-violet-400 card-shadow">
+                    <div className="card-shadow group relative size-96 shrink-0 overflow-hidden border-3 border-violet-400">
                         <img
                             src="/photo_cv.png"
                             alt="nikita"
                             className="absolute inset-0"
                         />
-                        
+
                         <motion.img
                             initial={{
-                                opacity: 0
+                                opacity: 0,
                             }}
                             animate={{
-                                opacity: [0.4, 0, 0, 0, 0.6, 0, 0.8, 0]
+                                opacity: [0.4, 0, 0, 0, 0.6, 0, 0.8, 0],
                             }}
-                            
                             transition={{
-                                duration: 5, repeat: Infinity, ease: steps(7)
+                                duration: 5,
+                                repeat: Infinity,
+                                ease: steps(7),
                             }}
                             src="/8bit_images/photo_cv_8bit.png"
                             alt="8bit_nikita"
@@ -35,64 +38,75 @@ const Landing = () => {
 
                     {/* TEXT */}
                     <div className="flex flex-col gap-10">
-                        
                         <div className="flex flex-col gap-2">
                             <div className="flex gap-6">
-                                <p className="font-pixel text-5xl inline-block text-violet-500">Nikita Ziuzin &lt;
+                                <p className="inline-block font-pixel text-5xl text-violet-500">
+                                    Nikita Ziuzin &lt;
                                     <motion.span
                                         initial={{
-                                            opacity: 1
+                                            opacity: 1,
                                         }}
                                         animate={{
-                                            opacity: 0
+                                            opacity: 0,
                                         }}
                                         transition={{
-                                            duration: 1, ease: steps(2), repeat: Infinity
+                                            duration: 1,
+                                            ease: steps(2),
+                                            repeat: Infinity,
                                         }}
-                                        >/
+                                    >
+                                        /
                                     </motion.span>
                                     &gt;
                                 </p>
                             </div>
 
-                            <div className="flex items-center gap-3 font-pixel text-violet-200 text-sm">
+                            <div className="flex items-center gap-3 font-pixel text-sm text-violet-200">
                                 <span className="">20 years old</span>
                                 <span className="h-5 w-[2px] bg-violet-500"></span>
                                 <span className="">
                                     IT student at&nbsp;
-                                    <a href={Strings.links.enseeiht}
-                                        className="underline underline-offset-4">
-                                            ENSEEIHT
-                                        </a>
+                                    <a
+                                        href={Strings.links.enseeiht}
+                                        className="-underline"
+                                    >
+                                        ENSEEIHT
+                                    </a>
                                 </span>
                                 <span className="h-5 w-[2px] bg-violet-500"></span>
                                 <span className="">
                                     Apprentice android developer for&nbsp;
-                                    <a href={Strings.links.ampere}
-                                        className="underline underline-offset-4">
-                                            Renault Group
-                                        </a>
+                                    <a
+                                        href={Strings.links.ampere}
+                                        className="-underline"
+                                    >
+                                        Renault Group
+                                    </a>
                                 </span>
                             </div>
                         </div>
-                                        
+
                         <div className="flex flex-col gap-2">
-                            {Strings.welcome.elevator_speech.map ( (speech, index) => (
-                                <p className="text-sm" key={index}>{speech}</p>
-                            ))}
+                            {Strings.welcome.elevator_speech.map(
+                                (speech, index) => (
+                                    <p className="text-sm" key={index}>
+                                        {speech}
+                                    </p>
+                                ),
+                            )}
                         </div>
 
                         <div className="flex gap-4 self-end">
-                            <Button 
-                                text={"See my english resume"}
-                                fun={() => console.log("TODO english resume")}
-                                src={"/8bit_images/flag_us.png"}
+                            <Button
+                                text={"Github profile"}
+                                fun={() => window.open(Strings.links.github, "_blank")}
+                                img={"/8bit_images/github.png"}
                             />
-                            
-                            <Button 
-                                text={"See my french resume"}
-                                fun={() => console.log("TODO english resume")}
-                                src={"/8bit_images/flag_fr.png"}
+
+                            <Button
+                                text={"LinkedIn profile"}
+                                fun={() => window.open(Strings.links.linkedin, "_blank")}
+                                img={"/8bit_images/linkedin.png"}
                             />
                         </div>
                     </div>

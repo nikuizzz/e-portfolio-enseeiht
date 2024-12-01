@@ -18,6 +18,10 @@ p, span, a {
     z-index: 5;
 }
 
+a:not(.no-a-underline) {
+    @apply underline underline-offset-4 hover:underline-offset-[3px]
+}
+
 ::selection {
     @apply bg-violet-900
 }
