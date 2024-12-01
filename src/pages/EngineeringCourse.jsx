@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { Strings, ContentWrapper, Button, SectionMotionContainer } from "../exports";
+import {
+    Strings,
+    ContentWrapper,
+    Button,
+    SectionMotionContainer,
+} from "../exports";
 import clsx from "clsx";
 import { motion, steps } from "framer-motion";
 
@@ -147,10 +152,12 @@ const SectionENSEEIHT = () => {
 
 const SectionComingSoon = () => {
     return (
-        <SectionMotionContainer className={clsx(
-            "mt-20 flex flex-col items-center justify-center gap-10 p-10",
-            "border-3 border-violet-400 card-shadow bg-zinc-800"
-            )}>
+        <SectionMotionContainer
+            className={clsx(
+                "mt-20 flex flex-col items-center justify-center gap-10 p-10",
+                "card-shadow border-3 border-violet-400 bg-zinc-800",
+            )}
+        >
             <motion.div
                 initial={{
                     opacity: 1,
@@ -171,33 +178,43 @@ const SectionComingSoon = () => {
                 </p>
             </motion.div>
 
-            <div className="flex flex-col w-3/4 gap-8">
-                <p className="text-justify">{Strings.engineering_course.coming_soon.description}</p>
+            <div className="flex w-3/4 flex-col gap-8">
+                <p className="text-justify">
+                    {Strings.engineering_course.coming_soon.description}
+                </p>
 
-                <p className="text-justify">I suggest you following me on my professionnal social media to keep track of my incoming projects!</p>
-                
+                <p className="text-justify">
+                    I suggest you following me on my professionnal social media
+                    to keep track of my incoming projects!
+                </p>
+
                 <div className="flex gap-4">
-                    <Button 
+                    <Button
                         text={"Follow me on LinkedIn"}
                         src={"/8bit_images/linkedin.png"}
-                        fun={() => window.open(Strings.links.linkedin, "_blank")}
-                        />
-                    <Button 
+                        fun={() =>
+                            window.open(Strings.links.linkedin, "_blank")
+                        }
+                    />
+                    <Button
                         text={"Follow me on YouTube"}
                         src={"/8bit_images/youtube.png"}
                         fun={() => window.open(Strings.links.youtube, "_blank")}
-                        />
+                    />
                 </div>
             </div>
         </SectionMotionContainer>
     );
 };
 
-const Engineering = () => {
+const EngineeringCourse = () => {
     const [activeTab, setActiveTab] = useState(2);
 
     return (
-        <div className="mb-section-offset flex justify-center">
+        <div
+            className="flex justify-center pt-section-offset"
+            id={Strings.engineering_course.id}
+        >
             <ContentWrapper className="mb-section-title-offset flex flex-col items-center justify-center">
                 <p className="mb-20 font-pixel text-5xl text-violet-500">
                     {Strings.engineering_course.title}
@@ -292,4 +309,4 @@ const Engineering = () => {
     );
 };
 
-export default Engineering;
+export default EngineeringCourse;

@@ -1,64 +1,83 @@
-import { motion, steps } from "framer-motion"
-import { Strings, SectionMotionContainer, ContentWrapper } from "../exports"
-import { useState } from "react"
+import { motion, steps } from "framer-motion";
+import { Strings, SectionMotionContainer, ContentWrapper } from "../exports";
+import { useState } from "react";
 
 const Timeline = (experiences) => {
-    experiences = experiences.experiences
-    const civicEngagementHoursGoal = 40
-    var fillPercentage = ((experiences.map( (experience, _) => (experience.duration) )).reduce((acc, curr) => acc + curr, 0) / civicEngagementHoursGoal) * 100
-    fillPercentage = fillPercentage > 100 ? 100 : fillPercentage
+    experiences = experiences.experiences;
+    const civicEngagementHoursGoal = 40;
+    var fillPercentage =
+        (experiences
+            .map((experience, _) => experience.duration)
+            .reduce((acc, curr) => acc + curr, 0) /
+            civicEngagementHoursGoal) *
+        100;
+    fillPercentage = fillPercentage > 100 ? 100 : fillPercentage;
 
-    const [fillInitialized, setFillInitialized] = useState(false)
+    const [fillInitialized, setFillInitialized] = useState(false);
 
     return (
-        <div className="w-3/4 bg-yellow-400 flex flex-col mb-section-title-offset">
-            <div className="relative w-full bg-violet-900 h-5">
+        <div className="mb-section-title-offset flex w-3/4 flex-col bg-yellow-400">
+            <div className="relative h-5 w-full bg-violet-900">
                 <motion.div
                     initial={{
-                        width: 0
+                        width: 0,
                     }}
-                    animate={fillInitialized ? {
-                        width: `${fillPercentage}%`
-                    } : {}}
+                    animate={
+                        fillInitialized
+                            ? {
+                                  width: `${fillPercentage}%`,
+                              }
+                            : {}
+                    }
                     whileInView={() => {
-                        if (!fillInitialized) setFillInitialized(true)
+                        if (!fillInitialized) setFillInitialized(true);
                     }}
                     transition={{
                         duration: 1,
-                        ease: steps(fillPercentage)
+                        ease: steps(fillPercentage),
                     }}
-                    className="flex justify-end items-center pe-2 absolute left-0 top-0 bottom-0 bg-violet-500"
+                    className="absolute bottom-0 left-0 top-0 flex items-center justify-end bg-violet-500 pe-2"
                 >
                     {fillPercentage > 10 && (
                         <motion.div
                             initial={{
-                                opacity: 0
+                                opacity: 0,
                             }}
-                            animate={fillInitialized ? {
-                                opacity: 1
-                            } : {}}
+                            animate={
+                                fillInitialized
+                                    ? {
+                                          opacity: 1,
+                                      }
+                                    : {}
+                            }
                             transition={{
-                                duration: 2, ease: "easeIn"
+                                duration: 2,
+                                ease: "easeIn",
                             }}
-                        >{Math.round(fillPercentage)} %</motion.div>
+                        >
+                            {Math.round(fillPercentage)} %
+                        </motion.div>
                     )}
                 </motion.div>
 
-                <span className="absolute left-0 -translate-x-1/2 translate-y-2/3 pt-1 w-fit">0 hours</span>
-                <span className="absolute right-0 translate-x-1/2 translate-y-2/3 pt-1">{civicEngagementHoursGoal} hours</span>
+                <span className="absolute left-0 w-fit -translate-x-1/2 translate-y-2/3 pt-1">
+                    0 hours
+                </span>
+                <span className="absolute right-0 translate-x-1/2 translate-y-2/3 pt-1">
+                    {civicEngagementHoursGoal} hours
+                </span>
             </div>
 
             {/* <div className="flex justify-between">
                 <span>0 hours</span>
                 <span>{civicEngagementHoursGoal} hours</span>
             </div> */}
-
         </div>
-    )
-}
+    );
+};
 
 const ExperienceSection = (experience) => {
-    experience = experience.experience
+    experience = experience.experience;
 
     return (
         <SectionMotionContainer className="flex gap-10">
@@ -73,29 +92,30 @@ const ExperienceSection = (experience) => {
                 <div className="mb-8 flex items-center gap-2 text-sm text-violet-200">
                     <span>Date: {experience.date}</span>
                     <span className="h-4 w-[1.5px] bg-violet-500"></span>
-                    <span>Duration: {experience.duration} hours</span> 
+                    <span>Duration: {experience.duration} hours</span>
                     {/* BE CAREFUL - IS IT HOURS? */}
                 </div>
 
-                <p className="text-justify">
-                    {experience.description}
-                </p>
+                <p className="text-justify">{experience.description}</p>
             </div>
         </SectionMotionContainer>
-    )
-}
+    );
+};
 
 const CivicEngagement = () => {
-    const experiences = Strings.civic_engagement.experiences
+    const experiences = Strings.civic_engagement.experiences;
 
     return (
-        <div className="mb-section-offset flex justify-center">
+        <div
+            className="flex justify-center pt-section-offset"
+            id={Strings.civic_engagement.id}
+        >
             <ContentWrapper className="mb-section-title-offset flex flex-col items-center justify-center">
-                <div className="flex flex-col gap-2 mb-section-title-offset">
+                <div className="mb-section-title-offset flex flex-col gap-2">
                     <p className="font-pixel text-5xl text-violet-500">
                         {Strings.civic_engagement.title}
                     </p>
-                    
+
                     <motion.div
                         initial={{
                             opacity: 1,
@@ -114,22 +134,19 @@ const CivicEngagement = () => {
                     </motion.div>
                 </div>
 
-
                 <Timeline experiences={experiences} />
 
-                <div className="flex flex-col w-full gap-8">
-                    {
-                        experiences.map( (experience, index) => (
-                            <ExperienceSection 
-                                experience={experience}
-                                key={index}
-                            />
-                        ))
-                    }
+                <div className="flex w-full flex-col gap-8">
+                    {experiences.map((experience, index) => (
+                        <ExperienceSection
+                            experience={experience}
+                            key={index}
+                        />
+                    ))}
                 </div>
             </ContentWrapper>
         </div>
-    )
-}
+    );
+};
 
-export default CivicEngagement
+export default CivicEngagement;

@@ -6,7 +6,7 @@ export { default as Button } from "@/components/Button"
 export { default as SectionMotionContainer } from "@/components/SectionMotionContainer"
 
 export { default as Header } from "@/components/Header"
-export { default as Engineering } from "@/pages/Engineering";
+export { default as EngineeringCourse } from "@/pages/EngineeringCourse";
 export { default as International } from "@/pages/International";
 export { default as CivicEngagement } from "@/pages/CivicEngagement";
 export { default as CareerDevelopment } from "@/pages/CareerDevelopment";

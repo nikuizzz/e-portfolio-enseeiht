@@ -4,7 +4,7 @@ import { motion, steps } from "framer-motion";
 
 const Landing = () => {
     return (
-        <main className="flex h-screen w-full items-center justify-center">
+        <main className="flex h-screen w-full items-center justify-center" id={Strings.welcome.id}>
             <ContentWrapper>
                 <div className="flex items-center justify-center gap-10">
 

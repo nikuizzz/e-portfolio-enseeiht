@@ -1,4 +1,4 @@
-import { Background, Header, Landing, Engineering, International, CivicEngagement, CareerDevelopment, Other, Footer } from "@/exports";
+import { Background, Header, Landing, EngineeringCourse, International, CivicEngagement, CareerDevelopment, Other, Footer } from "@/exports";
 
 const App = () => {
     return (
@@ -6,7 +6,7 @@ const App = () => {
             <Background />
             <Header />
             <Landing />
-            <Engineering />
+            <EngineeringCourse />
             <International />
             <CivicEngagement />
             <CareerDevelopment />

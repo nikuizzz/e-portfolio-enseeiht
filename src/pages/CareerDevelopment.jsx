@@ -1,9 +1,14 @@
-import React from 'react'
+import { Strings } from "../exports";
 
 const CareerDevelopment = () => {
-  return (
-    <div>CareerDevelopment</div>
-  )
-}
+    return (
+        <div
+            className="flex justify-center pt-section-offset"
+            id={Strings.career_development.id}
+        >
+            CareerDevelopment
+        </div>
+    );
+};
 
-export default CareerDevelopment
+export default CareerDevelopment;

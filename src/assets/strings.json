@@ -1,5 +1,6 @@
 {
     "welcome": {
+        "id": "welcome",
         "title": "Welcome",
         "elevator_speech": [
             "Hello! My name is Nikita. I am a future software engineer currently studying computer science at one of the most reputed French engineering schools, the ENSEEIHT. I'm trying to specialize in software development and especially the car industry, which is one of the reasons why I'm currently working as an apprentice android developer for Ampere Software Technology.",
@@ -8,6 +9,7 @@
         ]
     },
     "engineering_course": {
+        "id": "engineering_course",
         "title": "Engineering course",
         "iut": {
             "title": "IUT de Saint-Malo",
@@ -79,6 +81,7 @@
         }
     },
     "international": {
+        "id": "international",
         "title": "International",
         "description": "An international mobility is an essential part of any engineering course in France. Thus, before graduating from the ENSEEIHT I will have to either do an internship abroad or go to an university in a foreign country. As I've just started my course, the urge of finding my future international experience is not pressant yet, however I already have some destinations in mind. Here are some of them.",
         "destinations": [
@@ -125,6 +128,7 @@
         ]
     },
     "civic_engagement": {
+        "id": "civic_engagement",
         "title": "Civic engagement",
         "experiences": [
             {
@@ -137,6 +141,7 @@
         ]
     },
     "other": {
+        "id": "other",
         "title": "Other",
         "tabs": [
             {
@@ -187,6 +192,7 @@
         ]
     },
     "career_development": {
+        "id": "career_development",
         "title": "Career development"
     },
     "links": {
