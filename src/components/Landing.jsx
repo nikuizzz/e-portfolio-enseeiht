@@ -81,7 +81,7 @@ const Landing = () => {
                                         IT student at&nbsp;
                                         <a
                                             href={Strings.links.enseeiht}
-                                            className="-underline"
+                                            target="_blank"
                                         >
                                             ENSEEIHT
                                         </a>
@@ -91,7 +91,7 @@ const Landing = () => {
                                         Apprentice android developer for&nbsp;
                                         <a
                                             href={Strings.links.ampere}
-                                            className="-underline"
+                                            target="_blank"
                                         >
                                             Renault Group
                                         </a>

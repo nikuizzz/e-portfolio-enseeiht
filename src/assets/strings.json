@@ -3,9 +3,9 @@
         "id": "welcome",
         "title": "Welcome",
         "elevator_speech": [
-            "Hello! My name is Nikita. I am a future software engineer currently studying computer science at one of the most reputed French engineering schools, the ENSEEIHT. I'm trying to specialize in software development and especially the car industry, which is one of the reasons why I'm currently working as an apprentice android developer for Ampere Software Technology.",
-            "As you could have guessed by now, this is my e-portfolio website. Here you can find some of the most important information about my current studies or the projects I'm working on. Besides that, you can also find some more personal facts about me, especially the stuff I do outside of school/work (sports, civic engagement, people that inspire me).",
-            "Have a good browsing! ;)"
+            "Hello! My name is Nikita. I am a future software engineer currently studying computer science at one of the most reputable French engineering schools, the ENSEEIHT. I'm specializing in software development, particularly in the car industry. This is one of the reasons why I'm currently working as an apprentice Android developer for Ampere Software Technology.",
+            "As you might have guessed by now, this is my e-portfolio website. Here, you can find some of the most important information about my current studies and the projects I'm working on. Additionally, you can also find more personal facts about me, especially the activities I pursue outside of school or work (sports, civic engagement, people who inspire me).",
+            "Enjoy browsing! ;)"
         ]
     },
     "engineering_course": {
@@ -14,8 +14,8 @@
         "iut": {
             "title": "IUT de Saint-Malo",
             "link": "https://iut-stmalo.univ-rennes.fr/",
-            "description": "I've started my journey in the IT sphere by obtaining a bachelor's degree in Networks & Telecommunications at the IUT of Saint-Malo, in France. During these two years I've gained solid knowledge in several domains of IT,such as networking, telecommunications and programming. All while studying at the university, I was also \"working\"as a network technician apprentice at the departamental council of Finistère (29), a precious experience that allowedme to consolidate the basics that I've obtained at the IUT by working on real projects.",
-            "projects_intro": "Talking about projects, here as some of them, realized both at university and at \"work\".",
+            "description": "I began my journey in IT by obtaining a bachelor's degree in Networks & Telecommunications at the IUT of Saint-Malo, France. During these two years, I gained solid knowledge in several domains of IT such as networking, telecommunications and programming. While studying at the university, I was also 'working' as a network technician apprentice at the departmental council of Finistère (29), a valuable experience that allowed me to consolidate the basics I had learned at the IUT by working on real projects.",
+            "projects_intro": "Speaking of projects, here are some of the ones I worked on during my time at university and at 'work.'",
             "projects": [
                 {
                     "title": "Network automation tool",
@@ -25,7 +25,7 @@
                         "Virtualization"
                     ],
                     "img": "/projects/iut/network.png",
-                    "description": "For my final IUT project, I had to create a network automation tool for my company (dpt. Council of Finistère). The goal was to create a powerful yet ease-to-use software that any technician could quickly get to grips with. Based on Python and Ansible, this tool can generate network configurations and directly apply them on hundreds of equipments (a task that formerly requested considerable amounts of time and was a big source of errors)."
+                    "description": "For my final IUT project, I created a network automation tool for my company (Dept. Council of Finistère). The goal was to develop a powerful yet easy-to-use software that any technician could quickly get to grips with. Based on Python and Ansible, this tool generates network configurations and directly applies them to hundreds of devices, saving significant time and reducing errors."
                 },
                 {
                     "title": "Graduation ceremony website",
@@ -35,7 +35,7 @@
                         "Javascript"
                     ],
                     "img": "/projects/iut/rdd.png",
-                    "description": "Another big project that I had the opportunity to work on was the creation of a website for the graduation ceremony of the Network & Telecommunications department. This website provided future graduates all the important information about the ceremony and also gave them to opportunity to get their places, directly on the website. I mainly participated in the front-end development, while my group worked on the back-end."
+                    "description": "Another major project I worked on was the creation of a website for the graduation ceremony of the Network & Telecommunications department. This website provided future graduates with all the essential information about the ceremony and allowed them to reserve their places directly online. I primarily worked the front-end of the website, while other students of my group developped the back-end side."
                 },
                 {
                     "title": "WEI Website",
@@ -45,15 +45,15 @@
                         "Javascript"
                     ],
                     "img": "/projects/iut/wei.png",
-                    "description": "One of some less significant projects of mine was the creation of another website for my university. Each year, the Student Union organizes a so called \"week-end of integration\" for the new students. My goal in this project was to design and create the website, providing potential participants with every bit of information they could need."
+                    "description": "One of my smaller projects was the creation of another website for my university. Each year, the Student Union organizes a so-called 'weekend of integration' for new students. My role in this project was to design and create the website, providing potential participants with all the information they might be interested in before getting their tickets."
                 }
             ]
         },
         "enseeiht": {
             "title": "ENSEEIHT",
             "link": "https://www.enseeiht.fr/fr/index.html",
-            "description": "At the current stage of my carreer I am a first-year computer science engineer student at the ENSEEIHT (École nationale supérieure d'électrotechnique, d'électronique, d'informatique, d'hydraulique et des télécommunications). I'm also an apprentice android developper for a branch of Renault Group, Ampere Software Technology. At the ENSEEIHT, I primarly study computer science, programming, mathematics and soft skills. On the other hand, my apprenticeship allows me to put in work the things I learn at school, mostly by developping on-board applications for Renault Group's cars and then testing them on these same cars. Sounds cool, doesn't it?",
-            "projects_intro": "Here are some of my current projects that are both personal and professionnal.",
+            "description": "At this stage of my career, I am a first-year computer science engineering student at the ENSEEIHT (École nationale supérieure d'électrotechnique, d'électronique, d'informatique, d'hydraulique et des télécommunications). I'm also an apprentice Android developer for Ampere Software Technology, a branch of Renault Group. At ENSEEIHT, I primarily study computer science, programming, mathematics, and soft skills. My apprenticeship allows me to apply what I learn at school by developing onboard applications for Renault Group's cars and testing them directly on the vehicles. Sounds cool, doesn't it?",
+            "projects_intro": "Here are some of my current projects, both personal and professional.",
             "projects": [
                 {
                     "title": "Alpine Telemetrics",
@@ -62,7 +62,7 @@
                         "Reactive Programming"
                     ],
                     "img": "/projects/enseeiht/alpine.png",
-                    "description": "Alpine Telemetrics is my current project at Ampere. It is an on-board application for the new series of Alpine cars that allows their drivers to gather some live information about their car, such as G-force, lap time, brake or tyres temperatures and many more. It was concepted as a mini video-game inside of your car that allows you to enhance your track performance, especially by completing some challenges or following built-in coaching tutorials."
+                    "description": "Alpine Telemetrics is the project I am working on at Ampere. It is an onboard application for the new series of Alpine cars, giving drivers the ability to gather live information about their vehicles, such as G-force, lap times, brake or tire temperatures and so on. It was conceived as a mini video game inside your car to enhance track performance, particularly through challenges and built-in coaching tutorials."
                 },
                 {
                     "title": "Rennes Immobilier",
@@ -71,24 +71,24 @@
                         "Tailwind"
                     ],
                     "img": "/projects/enseeiht/rennes.png",
-                    "description": "This is one of the biggest projects I have had the opportunity to work on, at this stage of my career. Rennes Immobilier is an Airbnb-like website that I'm currently working on with one of my friends from the IUT. While he's working on the back-end, I'm in charge of the UI/UX of Rennes Immobilier's website, as well as the front-end development itself."
+                    "description": "This is one of the biggest projects I have worked on so far. Rennes Immobilier is an Airbnb-like website that I'm developing with an associate. While he handles the back-end, I am responsible for the UI/UX design, as well as the front-end development."
                 }
             ]
         }, 
         "coming_soon": {
             "title": "Coming soon...",
-            "description": "Well... this section's name is pretty self-explanotary, isn't it? For the moment I cannot tell you (neither can I tell it to myself) what route my career will take after graduating from the ENSEEIHT. All I can say for now is that I like what I'm doing and I'd like to pursue in this field of IT for some part of my life after my graduation. But keep in mind that I am a very manual person, so there is a considerable possibility that in 10 years from now you would rather find me opening a garage than opening a tech start-up. Time will show everything!"
+            "description": "Well... this section's title is pretty self-explanatory, isn't it? At the moment, I can't predict the exact path my career will take after graduating from ENSEEIHT. All I know is that I enjoy what I’m doing and plan to continue in this field of IT for some time after graduation. Time will tell!"
         }
     },
     "international": {
         "id": "international",
         "title": "International",
-        "description": "An international mobility is an essential part of any engineering course in France. Thus, before graduating from the ENSEEIHT I will have to either do an internship abroad or go to an university in a foreign country. As I've just started my course, the urge of finding my future international experience is not pressant yet, however I already have some destinations in mind. Here are some of them.",
+        "description": "An international mobility is an essential part of any engineering course in France. Thus, before graduating from ENSEEIHT, I must either complete an internship abroad or study at a foreign university. Since I’ve just started my course, the urgency of finding this experience isn’t pressing yet, but I already have some destinations in mind. Here are some of them.",
         "destinations": [
             {
                 "country": "Europe",
                 "img": "/8bit_images/flag_eu.png",
-                "description": "My desire of studying in Europe and especially in the UK is feeded by my goal of improving my English skills. Going to Cranfield's University would allow me to acquire both technical skills and the english-studying experience I'm currently missing.",
+                "description": "My desire to study in Europe, particularly in the UK, stems from my goal of improving my English skills. Attending Cranfield University would allow me to acquire both technical knowledge and the English immersion experience I currently lack.",
                 "universities": [
                     {
                         "name": "Cranfield University, UK",
@@ -102,7 +102,7 @@
                     "/8bit_images/flag_us.png",
                     "/8bit_images/flag_ca.png"
                 ],
-                "description": "North America and especially the United States and Canada are one of my most wanted destinations. I have a willing of pursuing my career in the US, therefore this opportunity could be the the first step of this difficult journey. Two of the universities I'm interested in are Georgia Techa and ÉTS Montreal.",
+                "description": "North America, particularly the United States and Canada, is among my top choice destinations. I aspire to pursue a career in the US, and this opportunity could be the first step in that journey. Two universities I’m interested in are Georgia Tech and ÉTS Montreal.",
                 "universities": [
                     {
                         "name": "Georgia Tech",
@@ -117,7 +117,7 @@
             {
                 "country": "Russia",
                 "img": "/8bit_images/flag_ru.png",
-                "description": "Being a native russian speaker that mostly studied in France, the opportunity of studying in a russian university seems really interesting to me, especially knowing that Saint-Petersburg's State Institute of Technology is one of the best institutions in the country.",
+                "description": "Being a native Russian speaker who has primarily studied in France, the prospect of studying at a Russian university intrigues me, especially knowing that Saint-Petersburg State Institute of Technology is one of the country’s leading institutions.",
                 "universities": [
                     {
                         "name": "St. Petersburg State Institute of Technology",
@@ -134,9 +134,9 @@
             {
                 "title": "Toulouse Run Experience",
                 "img": "/civic_engagement/toulouse_run_experience.png",
-                "date": "10 Novembre 2024",
+                "date": "November 10, 2024",
                 "duration": 6,
-                "description": "One of my first evert civic engagement experience was this year's Toulouse's marathon. As a volunteer, my mission was to prepare food and drink stands for the runners that were arriving at the marathon's village, situated right at the end of the race."
+                "description": "My first-ever civic engagement experience was volunteering at this year's Toulouse Marathon. My task was to prepare food and drink stands for the runners arriving at the marathon village, located at the race's finish line."
             }
         ]
     },
@@ -150,7 +150,7 @@
                     "text": "LeBron and Bronny James are the first father-son NBA duo.",
                     "url": "https://www.nba.com/news/lebron-bronny-james-make-history-play-together"
                 },
-                "description": "One of my (two) favorite sports is Basket-Ball. I've started playing it in middle school and I am still passionate about this game. This is one of the reasons I'm currently part of one of the ENSEEIHT's basket-ball teams. It allows me to keep practicing and enhancing some skills that may become useful even outside of the basket-ball court, for example team-working.",
+                "description": "One of my two favorite sports is basketball. I started playing it in middle school, and I am still passionate about the game. This passion led me to join one of ENSEEIHT’s basketball teams, where I continue to practice and hone skills that are valuable even off the court, such as teamwork.",
                 "img": "/8bit_images/miami_heat.png",
                 "button": {
                     "present": true,
@@ -165,7 +165,7 @@
                     "text": "Three French riders sweep the podium in Paris 2024 BMX racing.",
                     "url": "https://olympics.com/fr/paris-2024/resultats/cyclisme-bmx-racing/hommes/fnl-000100--"
                 },
-                "description": "My other favorite sport is the BMX Freestyle - an extreme sport that recently became an olympic discipline. While competing, the goal is to accomplish the most spectacular tricks, ofter evolving flying out of ramps, rotating or flipping yourself in order to get the highest score by the jury. To win such competitions, riders have to invent new tricks often involving their creativity - a skill that is useful to me in my professionnal career.",
+                "description": "My other favorite sport is BMX Freestyle, an extreme sport that recently became an Olympic discipline. In competitions, the goal is to perform the most spectacular tricks, often involving flying off ramps, rotations, or flips, to achieve the highest score from the jury. Winning requires creativity — a skill I find equally essential in my professional career.",
                 "img": "/8bit_images/bmx_1.png",
                 "button": {
                     "present": true,
@@ -175,12 +175,12 @@
                 }
             },
             {
-                "title": "Rubiks-Cube",
+                "title": "Rubik's Cube",
                 "fun_fact": {
                     "text": "The current 3x3 world record is 3'13''.",
                     "url": "https://www.worldcubeassociation.org/results/records"
                 },
-                "description": "A favorite hobby of mine is Rubiks-Cube solving, also called speed cubing. Solving the 3x3 involves memorizing hundreds of unique algorithms and enhances both memory and problem solving, two essential skills in the IT engineering field.",
+                "description": "One of my hobbies is Rubik’s Cube solving, also known as speed cubing. Solving a 3x3 cube involves memorizing hundreds of unique algorithms and enhances both memory and problem-solving skills, which are crucial in IT engineering.",
                 "img": "/8bit_images/rubiks_cube.png",
                 "button": {
                     "present": false,
@@ -209,7 +209,7 @@
                     "name": "ENSEEIHT",
                     "url": "https://www.enseeiht.fr/fr/index.html"
                 },
-                "description": "Alexandre is currently studying electronics at the ENSEEIHT. The reason his profile caught my attention is that he is currently preparing for his semester at Georgia Tech, USA, which is a top-choice institution for my international experience. Our exchange was really rich in useful information conserning Georgia Tech."
+                "description": "Alexandre is currently studying electronics at ENSEEIHT. His profile caught my attention because he is preparing for a semester at Georgia Tech, USA, one of my top choices for international mobility. Our exchange provided valuable insights about Georgia Tech."
             },
             {
                 "name": "Jason MAIRE",
@@ -220,7 +220,7 @@
                     "name": "Ampere",
                     "url": "https://www.ampere.cars/"
                 },
-                "description": "Jason is a full-stack developer at Ampere and also my apprenticeship mentor. As I have similar career as him, I did not miss the opportunity to question him about his career path, the field he've studied in as well as the skills that he uses on a daily basis."
+                "description": "Jason is a full-stack developer at Ampere and also my apprenticeship mentor. As I am following a similar career path, I didn’t miss the opportunity to ask him about his studies and the skills he uses daily."
             },
             {
                 "name": "Lucile Schneider",
@@ -231,7 +231,7 @@
                     "name": "Ampere",
                     "url": "https://www.ampere.cars/"
                 },
-                "description": "Lucile is also one of my colleaugues at Ampere, working as an HMI android developer. She is an ENSEEIHT's alumni from the computer science class of 2014-2017. Exchanging on her experience after the graduation was very insightful, as I was particularly seeking to discover career paths that began similarly to mine."
+                "description": "Lucile is one of my colleagues at Ampere, working as an HMI android developer. She is an ENSEEIHT's alumni from the computer science class of 2014-2017. Exchanging on her post-graduation experience was very insightful, as I was particularly seeking to discover career paths that began similarly to mine."
             }
         ]
     },

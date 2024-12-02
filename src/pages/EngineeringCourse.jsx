@@ -233,7 +233,7 @@ const EngineeringCourse = () => {
                             "opacity-25": activeTab !== 1,
                         })}
                     >
-                        <span className="absolute md:bottom-[-50%] top-[-50%] w-full text-center font-pixel">
+                        <span className="absolute md:bottom-[-50%] md:top-auto top-[-50%] w-full text-center font-pixel">
                             2022-2024
                         </span>
                         <Button
