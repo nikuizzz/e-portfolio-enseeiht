@@ -156,7 +156,7 @@ const SectionComingSoon = () => {
         <SectionMotionContainer
             className={clsx(
                 "mt-20 flex flex-col items-center justify-center gap-10 md:p-10",
-                "md:card-shadow md:border-3 md:border-violet-400 md:bg-zinc-800",
+                "md:card-shadow md:border-3 md:border-violet-400 md:bg-zinc-800 z-10",
             )}
         >
             <motion.div
