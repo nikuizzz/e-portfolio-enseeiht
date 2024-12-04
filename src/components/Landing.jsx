@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { ContentWrapper, Strings, Button } from "../exports";
+import { ContentWrapper, Strings, Button, PhotoCV } from "../exports";
 import { motion, steps } from "framer-motion";
 
 const Photo = ({ className }) => {
@@ -11,7 +11,7 @@ const Photo = ({ className }) => {
             )}
         >
             <img
-                src="/photo_cv.png"
+                src={PhotoCV}
                 alt="nikita"
                 className="absolute inset-0"
             />

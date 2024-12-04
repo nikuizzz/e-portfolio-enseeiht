@@ -15,3 +15,5 @@ export { default as Other } from "@/pages/Other";
 export { default as Footer } from "@/components/Footer"
 
 export { default as Strings } from "@/assets/strings";
+
+export { default as PhotoCV } from "@/assets/photo_cv.png"
