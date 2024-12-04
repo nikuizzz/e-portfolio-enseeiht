@@ -17,17 +17,17 @@ const VideoSection = () => {
                 "card-shadow border-3 border-violet-400 bg-zinc-800",
             )}
         >
-            {/* <video controls>
-                <source src="https://www.youtube.com/watch?v=lkoTb4LSH_8" type="video/mp4" />
+            <video controls className="h-full w-full">
+                <source src={Strings.career_development.video} type="video/mp4"/>
                 I'm sorry, it looks like your browser does not support this video tag...
-            </video> */}
-            <iframe
+            </video>
+            {/* <iframe
                 className="h-full w-full"
-                src="https://www.youtube.com/embed/lkoTb4LSH_8"
+                src="https://www.youtube.com/watch?v=vXNI40U2p5Q"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-            ></iframe>
+            ></iframe> */}
         </SectionMotionContainer>
     );
 };
