@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { ContentWrapper, Strings, Button, PhotoCV } from "../exports";
+import { ContentWrapper, Strings, Button } from "@/exports";
 import { motion, steps } from "framer-motion";
 
 const Photo = ({ className }) => {
@@ -11,7 +11,7 @@ const Photo = ({ className }) => {
             )}
         >
             <img
-                src="./src/assets/photo_cv.png"
+                src={Strings.images.photo_cv}
                 alt="nikita"
                 className="absolute inset-0"
             />
@@ -44,13 +44,12 @@ const Landing = () => {
         >
             <ContentWrapper>
                 <div className="flex flex-col items-center justify-center gap-10 md:flex-row">
-                    <Photo className={"lg:block md:hidden block"} />
+                    <Photo className={"block md:hidden lg:block"} />
 
                     {/* TEXT */}
                     <div className="flex flex-col gap-10">
-
                         <div className="flex gap-6">
-                            <Photo className={"hidden lg:hidden md:block"}/>
+                            <Photo className={"hidden md:block lg:hidden"} />
                             <div className="flex flex-col gap-2">
                                 <div className="flex gap-6">
                                     <p className="inline-block font-pixel text-4xl text-violet-500 md:text-5xl">
@@ -99,8 +98,6 @@ const Landing = () => {
                                 </div>
                             </div>
                         </div>
-
-
 
                         <div className="flex flex-col gap-2">
                             {Strings.welcome.elevator_speech.map(
