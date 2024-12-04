@@ -35,7 +35,7 @@ const Header = () => {
                 <div className="flex justify-between">
                     {/* LOGO */}
                     <div className="size-12 rounded-lg overflow-hidden">
-                        <img src="/logo.png" alt="NZ company" className="size-full"/>
+                        <img src={Strings.images.logo} alt="NZ company" className="size-full"/>
                     </div>
 
                     <button 

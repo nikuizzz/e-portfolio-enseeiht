@@ -11,7 +11,7 @@ const Photo = ({ className }) => {
             )}
         >
             <img
-                src={PhotoCV}
+                src="./src/assets/photo_cv.png"
                 alt="nikita"
                 className="absolute inset-0"
             />
@@ -28,7 +28,7 @@ const Photo = ({ className }) => {
                     repeat: Infinity,
                     ease: steps(7),
                 }}
-                src="/8bit_images/photo_cv_8bit.png"
+                src={Strings.images.photo_cv_8bit}
                 alt="8bit_nikita"
                 className="absolute inset-0"
             />
@@ -121,7 +121,7 @@ const Landing = () => {
                                 fun={() =>
                                     window.open(Strings.links.github, "_blank")
                                 }
-                                img={"/8bit_images/github.png"}
+                                img={Strings.images.github}
                                 className=""
                             />
 
@@ -133,7 +133,7 @@ const Landing = () => {
                                         "_blank",
                                     )
                                 }
-                                img={"/8bit_images/linkedin.png"}
+                                img={Strings.images.linkedin}
                                 className=""
                             />
                         </div>

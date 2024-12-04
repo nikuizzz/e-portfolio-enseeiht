@@ -153,7 +153,7 @@ const CareerDevelopment = () => {
                                     "_blank",
                                 )
                             }
-                            img={"/8bit_images/flag_us.png"}
+                            img={Strings.images.flag_us}
                             className={clsx("flex-1 md:flex-auto")}
                         />
 
@@ -165,7 +165,7 @@ const CareerDevelopment = () => {
                                     "_blank",
                                 )
                             }
-                            img={"/8bit_images/flag_fr.png"}
+                            img={Strings.images.flag_fr}
                             className={clsx("flex-1 md:flex-auto")}
                         />
                     </div>
@@ -183,7 +183,7 @@ const CareerDevelopment = () => {
                         fun={() =>
                             window.open(Strings.links.linkedin, "_blank")
                         }
-                        img={"/8bit_images/linkedin.png"}
+                        img={Strings.images.linkedin}
                     />
                 </div>
 
